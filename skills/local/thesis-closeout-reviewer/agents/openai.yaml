@@ -1,0 +1,8 @@
+interface:
+  display_name: "Thesis Closeout Reviewer"
+  short_description: "Diagnosis-only thesis closeout audit for Chinese LaTeX graduation theses"
+  default_prompt: "Use $thesis-closeout-reviewer to audit my thesis for closeout, produce a prioritized issue ledger with suggested repair skills, and do not rewrite the manuscript directly."
+
+policy:
+  allow_implicit_invocation: true
+

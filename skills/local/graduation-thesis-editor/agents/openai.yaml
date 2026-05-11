@@ -1,0 +1,7 @@
+interface:
+  display_name: "Graduation Thesis Editor"
+  short_description: "Route-first local Chinese LaTeX thesis editing and analysis"
+  default_prompt: "Use $graduation-thesis-editor to route an existing Chinese LaTeX thesis task to exactly one canonical local-edit prompt, then report Route ID / Prompt Source / Prompt Preserved Verbatim."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,140 +1,111 @@
 # Codex Thesis Workflow
 
-这是一个“方法论仓库”，不是论文正文仓库。
+用 `Codex + 本地 skills + 分阶段计划 + 章节素材包` 搭建一套可复用的毕业论文写作工作流。
 
-它整理的是我如何把 `Codex + 本地 skill + 分阶段计划文档 + 章节素材包` 组合成一条可复用的本科毕业论文写作工作流，并把这条工作流稳定地用于：
-
-- 章节级起草
-- 实验章重构
-- 全文收口与复审
-- 终稿语言打磨
-- 查重与 AIGC 风险控制
+这个仓库整理的是一条完整的论文推进路径：从蓝图规划、章节起草、实验分析、全文收口，到最终语言打磨与答辩前准备。重点不在“一次性生成整篇论文”，而在把论文写作拆成若干稳定、可追踪、可复盘的阶段。
 
 ## English Summary
 
-This repository is a public-safe workflow snapshot rather than a thesis manuscript repository.
+This repository documents a reusable graduation-thesis workflow built around Codex, local skills, staged plans, and chapter material packages.
 
-It documents how a real undergraduate thesis was produced with:
+It shows how to:
 
-- document-first project memory
-- chapter-level material packages
-- staged execution plans
-- a small set of clearly scoped local and upstream Codex skills
+- plan a thesis with long-lived authority documents
+- draft chapters through staged coauthoring
+- revise existing text with focused local-edit routes
+- run closeout review before final polish
+- turn scattered prompts into a maintainable skill system
 
-The goal is not one-shot AI writing. The goal is a controllable, auditable, low-risk writing pipeline.
+## 这个仓库的核心内容
 
-## 这个仓库解决什么问题
-
-这套方法主要回答 5 个问题：
-
-1. 一篇论文如何用 Codex 从 0 到 1 推进，而不是只靠一次 prompt。
-2. 写作过程中哪些内容应该沉淀成长期文档，而不是散落在聊天记录里。
-3. 不同 skill 在论文流程中分别负责什么，怎样避免职责冲突。
-4. 如何把 GitHub 上分散的 prompt / skill / 写作技巧压成本地可执行工作流。
-5. 为什么这种分层方法通常比“一次性生成全文”更稳，更利于查重和 AIGC 风险控制。
-
-## 核心思路
-
-我最终采用的不是“大一统写作 AI”，而是“分层工作流”：
-
-1. 先固定 authority。
-2. 再按章节建立素材包。
-3. 再按阶段写执行计划。
-4. 再用不同 skill 分工完成不同类型任务。
-5. 最后做整篇诊断、修补、复审和轻量风格清理。
-
-这意味着：
-
-- 正文不是从空白 prompt 里直接长出来的。
-- 每章能写什么、不能写什么，提前有边界。
-- 实验结论、图表职责、数据集角色优先在文档层冻结。
-- AI 的作用更像组织、改写、诊断和收口助手，而不是事实来源本身。
-
-## 仓库包含什么
-
-### 1. 工作流说明
+### 1. 工作流总览
 
 - [Workflow Overview](docs/workflow-overview.md)
 - [Skill Map](docs/skill-map.md)
 - [Repo Usage Guide](docs/repo-usage-guide.md)
 
-### 2. Skill 来源与本地改造说明
+这部分回答的是：论文为什么要分层推进、每一层解决什么问题、不同 skill 应该如何分工。
+
+### 2. Skill 体系与来源改造
 
 - [Skill Sources And Adaptations](docs/skill-sources-and-adaptations.md)
 - [Local Skill Inventory](skills/notes/local-skill-inventory.md)
 - [NOTICE](NOTICE.md)
 
+这部分记录的是：上游 prompt / skill 如何被整理成本地可复用的论文写作体系。
+
 ### 3. 分阶段执行计划
 
 - [workflow-assets/plans](workflow-assets/plans)
 
-这些文件保留了真实工作流的阶段结构，但已经做过公开版脱敏处理，不再携带我的本机绝对路径。
+这里保留了从选题启动、章节起草、实验章重构、摘要定稿到全文收口的阶段化计划写法。
 
-### 4. 本地 skill 公开安全快照
+### 4. 章节素材包结构
+
+- [workflow-assets/materials/README.md](workflow-assets/materials/README.md)
+
+这部分展示了如何为每一章搭建“正文可写层 / 结果分析层 / 核对层”的材料组织结构。
+
+### 5. 本地关键 skill 快照
 
 - [graduation-thesis-editor](skills/local/graduation-thesis-editor)
 - [thesis-closeout-reviewer](skills/local/thesis-closeout-reviewer)
 
-其中 `graduation-thesis-editor` 需要特别说明：
+其中 `graduation-thesis-editor` 是整个仓库里最有代表性的本地 skill 之一：
 
 - 它的本地完整版是按 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) 的 Part I 全部 prompt 集合整理、分组并 skill 化创建的
-- 当前公开仓库展示的是公开安全版 route 快照，用来说明本地化结构、触发方式和输入输出契约
-- 出于公开发布和复用边界考虑，这里不逐字镜像第三方长 prompt 原文
+- 它把高频局部任务收敛成 `translation / revision / analysis / figures` 四组 route
+- 它强调 route-first、一次只做一个原子任务，以及与 `doc-coauthoring`、`humanizer` 的明确 handoff
 
-这里保留的是：
+## 工作流一图看懂
 
-- 路由设计
-- 输入输出契约
-- handoff 边界
-- 本地化改造思路
+1. 先建立长期 authority：大纲、证据映射、写作日志。
+2. 再为每一章建立素材包，区分可写事实、分析材料和核对材料。
+3. 用 `doc-coauthoring` 完成从 0 到 1 的章节起草。
+4. 用 `graduation-thesis-editor` 处理翻译、缩写、扩写、润色、实验分析和 caption 等局部任务。
+5. 用 `thesis-closeout-reviewer` 与 `academic-paper-reviewer` 做整篇审稿和复审。
+6. 最后用 `humanizer`、`academic-plotting`、`academic-paper-composer` 做终稿层面的语言、图表与交付整理。
 
-不保留高风险的第三方长 prompt 原文逐字快照。
+## 关键 skill 分工
 
-### 5. 素材包结构示意
+- `doc-coauthoring`
+  - 负责从空白页到章节 working draft 的共写流程
+- `graduation-thesis-editor`
+  - 负责已有草稿上的局部翻译、改写、润色、实验分析和图表表达
+- `thesis-closeout-reviewer`
+  - 负责全文收口阶段的 diagnosis-only 问题台账
+- `academic-paper-reviewer`
+  - 负责更外部、更苛刻的 reviewer 视角复审
+- `humanizer`
+  - 负责终稿阶段的轻量语言打磨
+- `academic-plotting`
+  - 负责图表表达补强与绘图建议
 
-- [workflow-assets/materials/README.md](workflow-assets/materials/README.md)
-
-公开版保留的是“章节素材包如何分层”的结构说明，而不是我的私有素材全文。
-
-## 这个仓库刻意不包含什么
-
-- 论文正文成品
-- 私有实验归档
-- 原始数据
-- 私有截图
-- 第三方论文 PDF 原文
-- 需要依赖本机路径才能理解的私有工程细节
-
-## 适合谁看
-
-适合：
-
-- 想把 Codex 用在论文写作流程上的同学
-- 想把 prompt 体系本地化成 skill 的人
-- 想把论文写作做成“可审计流程”而不是“一次性生成”的人
-
-不适合：
-
-- 想直接复制论文正文的人
-- 想一键套用我私有工程路径和原始素材的人
-
-## 最短阅读顺序
+## 推荐阅读顺序
 
 1. [Workflow Overview](docs/workflow-overview.md)
 2. [Skill Map](docs/skill-map.md)
 3. [Skill Sources And Adaptations](docs/skill-sources-and-adaptations.md)
-4. [Quickstart For Classmates](examples/quickstart-for-classmates.md)
+4. [Quickstart](examples/quickstart.md)
+5. [workflow-assets/plans](workflow-assets/plans)
 
-## 来源说明
+## 适合参考的场景
 
-这次工作流中直接使用或吸收过的方法，主要来自：
+- 想用 Codex 搭建自己的毕业论文写作流程
+- 想把零散 prompt 整理成本地可复用的 skill
+- 想为论文建立更清晰的 authority、计划和章节材料体系
+- 想把初稿修改、全文审稿、终稿打磨拆成更稳定的链路
+
+## 上游来源与启发
+
+这套工作流直接吸收或改造过的方法，主要来自：
 
 - [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
 - [AAASS554/codex-academic-paper-skills](https://github.com/AAASS554/codex-academic-paper-skills)
 - [blader/humanizer](https://github.com/blader/humanizer)
 - [anthropics/skills - doc-coauthoring](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring)
 
-更细的来源拆分与公开版处理方式见：
+更细的来源拆分、skill 谱系和本地改造方式见：
 
 - [Skill Sources And Adaptations](docs/skill-sources-and-adaptations.md)
 - [Publishing Notes](docs/publishing-notes.md)

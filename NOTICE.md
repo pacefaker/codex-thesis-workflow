@@ -1,8 +1,8 @@
 # NOTICE
 
-This repository is a public-safe workflow repository.
+This repository documents how several public prompt and skill ideas were adapted into a local thesis-writing workflow.
 
-It documents how several public prompt and skill ideas were adapted into a local thesis-writing workflow. It does not claim to re-license or replace the original upstream projects.
+It is a curated reference implementation that preserves source attribution, local adaptation notes, role boundaries, and workflow structure.
 
 ## Referenced upstream projects
 
@@ -11,20 +11,19 @@ It documents how several public prompt and skill ideas were adapted into a local
 - [blader/humanizer](https://github.com/blader/humanizer)
 - [anthropics/skills - doc-coauthoring](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring)
 
-## Public-safe snapshot policy
+## Repository snapshot policy
 
 This repository may include:
 
 - source attribution
 - local adaptation notes
 - role and routing descriptions
-- public-safe summaries of local skill behavior
+- adapted summaries of local skill behavior
 
-This repository does not intend to act as:
+This repository is not intended to act as:
 
 - an official mirror of any upstream skill repository
 - a redistribution of third-party long prompt text without restriction
-- a repository of private thesis materials
 
 See also:
 

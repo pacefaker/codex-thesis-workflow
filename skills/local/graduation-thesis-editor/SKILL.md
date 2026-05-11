@@ -44,7 +44,7 @@ Then follow this order:
 4. Normalize the request into one atomic task.
 5. Select exactly one `Route ID` from `references/routing.md`.
 6. Read only the single reference file and section named by that route.
-7. Execute using the public-safe route contract for that task.
+7. Execute using the repository route contract for that task.
 
 ## Required execution record
 
@@ -56,7 +56,7 @@ Before execution, report:
 
 Default expected value:
 
-- `Prompt Snapshot Type: public-safe summary`
+- `Prompt Snapshot Type: repository summary`
 
 ## Route families
 

@@ -1,8 +1,8 @@
 # Skill Sources And Adaptations
 
-这一节专门记录：这次论文工作流里的关键 skill 来自哪里、我做了哪些本地化改造，以及公开版保留了什么。
+这一节专门记录：这次论文工作流里的关键 skill 来自哪里、我做了哪些本地化改造，以及本仓库保留了哪些可供参考的结构信息。
 
-## 公开版口径
+## 仓库快照口径
 
 这份文档统一区分三类信息：
 
@@ -12,8 +12,8 @@
 2. `local adaptation`
    - 我在真实论文流程里做的本地改造
 
-3. `public-safe snapshot`
-   - 这次公开仓库实际保留的部分
+3. `repository snapshot`
+   - 这次仓库实际保留的部分
 
 ## 1. `graduation-thesis-editor`
 
@@ -46,20 +46,20 @@
 - 强制“一次只走一个原子任务”
 - 明确和 `doc-coauthoring`、`humanizer` 的 handoff 边界
 
-### Public-safe snapshot
+### Repository snapshot
 
-公开版保留的是：
+仓库中保留的是：
 
 - route 设计
 - 输入输出契约
 - handoff 规则
 - 为什么这样本地化
 
-公开版不保留：
+仓库中不直接展开的是：
 
 - 接近上游原文的长 prompt 逐字快照
 
-因此 `skills/local/graduation-thesis-editor/references/` 中现在是“公开安全版摘要”，而不是原始 prompt 文本镜像。
+因此 `skills/local/graduation-thesis-editor/references/` 中现在保留的是整理后的 route 说明与任务契约，而不是原始 prompt 文本镜像。
 
 ## 2. `thesis-closeout-reviewer`
 
@@ -87,9 +87,9 @@
 - 先读 authority 再审正文
 - 输出 ledger 而不是重写稿
 
-### Public-safe snapshot
+### Repository snapshot
 
-公开版保留：
+仓库中保留：
 
 - 审稿模式
 - 审校维度
@@ -110,9 +110,9 @@
 - 它不承担最终全文润色
 - 它和 `graduation-thesis-editor` 明确分工
 
-### Public-safe snapshot
+### Repository snapshot
 
-公开版不镜像 `doc-coauthoring` 本体，只在文档里记录它的角色和用法边界。
+仓库不镜像 `doc-coauthoring` 本体，只在文档里记录它的角色和用法边界。
 
 ## 4. `humanizer`
 
@@ -135,9 +135,9 @@
 - 事实边界被冲淡
 - 实验表达变虚
 
-### Public-safe snapshot
+### Repository snapshot
 
-公开版只说明它在工作流中的后置角色，不包含任何上游内容镜像。
+仓库只说明它在工作流中的后置角色，不包含上游内容镜像。
 
 ## 5. `academic-paper-strategist`
 
@@ -153,9 +153,9 @@
 - 做证据映射
 - 先收紧边界，再允许写正文
 
-### Public-safe snapshot
+### Repository snapshot
 
-公开版保留角色说明，不镜像上游 skill 全文。
+仓库保留角色说明，不镜像上游 skill 全文。
 
 ## 6. `academic-paper-composer`
 
@@ -173,9 +173,9 @@
 
 它更像终稿组装器，而不是前期主写作器。
 
-### Public-safe snapshot
+### Repository snapshot
 
-公开版只记录角色与时机，不附带上游内容镜像。
+仓库只记录角色与时机，不附带上游内容镜像。
 
 ## 7. `academic-paper-reviewer`
 
@@ -192,9 +192,9 @@
 
 两者串起来以后，整篇 closeout 会稳很多。
 
-### Public-safe snapshot
+### Repository snapshot
 
-公开版只保留角色说明。
+仓库只保留角色说明。
 
 ## 8. `academic-plotting`
 
@@ -212,9 +212,9 @@
 - 证据边界
 - 正文与图表关系的重构
 
-### Public-safe snapshot
+### Repository snapshot
 
-公开版只保留角色说明，不附带依赖环境或私有图源。
+仓库只保留角色说明，不附带依赖环境或图源实现细节。
 
 ## 9. 这一套编排为什么有效
 

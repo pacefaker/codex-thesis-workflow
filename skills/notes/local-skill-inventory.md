@@ -23,7 +23,7 @@
   - figure / table 标题
   - reviewer 视角局部诊断
 - 公开版说明：
-  - 当前仓库保留的是公开安全版 route 快照，不是上游长 prompt 原文镜像
+  - 当前仓库保留的是 route 快照、任务契约与本地改造说明，不是上游长 prompt 原文镜像
 
 ### 3. `thesis-closeout-reviewer`
 

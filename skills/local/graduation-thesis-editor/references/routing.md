@@ -10,14 +10,14 @@ Use this file as the canonical route table for `graduation-thesis-editor`.
 4. Normalize the request to one atomic task.
 5. Select exactly one `Route ID`.
 6. Read only the reference file and heading specified by that route.
-7. Use the public-safe route contract as the execution boundary.
+7. Use the repository route contract as the execution boundary.
 8. Report `Route ID / Prompt Source / Prompt Snapshot Type` before execution.
 
 ## Snapshot policy
 
 This public repository preserves route structure and task contracts.
 
-- `Prompt Snapshot Type: public-safe summary`
+- `Prompt Snapshot Type: repository summary`
 - Do not claim that the long upstream prompt text is embedded here verbatim.
 
 ## Handoff Routes
@@ -71,4 +71,4 @@ Before using the selected route, report:
 - `Prompt Source`
 - `Prompt Snapshot Type`
 
-Default expected value for `Prompt Snapshot Type` is `public-safe summary`.
+Default expected value for `Prompt Snapshot Type` is `repository summary`.

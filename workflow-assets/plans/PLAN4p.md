@@ -1,24 +1,24 @@
-# T-011 第四章结果部分执行计划
+﻿# T-011 第四章结果部分执行计划
 
 ## 摘要
 - 本计划只服务于第4章结果部分 `4.5.1 -> 4.5.4`、`4.6` 以及第4章正式 chapter-end reader testing，不扩展到 `4.1 -> 4.4` 重写、第5章正文或整篇论文定稿。
 - 本轮目标是基于第4章实验素材包 V2 的 `README.md + 结果分析层/`，完成第4章结果部分 working draft，并在整章稳定后关闭第4章。
 - 主流程固定为 `$doc-coauthoring`，局部编辑固定为 `$graduation-thesis-editor`；不重新调用 `$academic-paper-strategist`，不进入 `$academic-paper-composer`。
-- 第4章唯一工作草稿继续固定为 `<private-thesis-repo>/thesis/chapter4-working-draft.md`，不新建 `chapter4-result-draft.md` 或其他副本。
-- 编译规则固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，严格按 `<private-thesis-repo>/.vscode/settings.json` 执行，输出到 `<private-thesis-repo>\thesis\build\`。
+- 第4章唯一工作草稿继续固定为 `<your-thesis-repo>/thesis/chapter4-working-draft.md`，不新建 `chapter4-result-draft.md` 或其他副本。
+- 编译规则固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，严格按 `<your-thesis-repo>/.vscode/settings.json` 执行，输出到 `<your-thesis-repo>\thesis\build\`。
 
 ## 计划定位
 - 这是“第4章结果部分专项计划”，不是整篇论文总计划，也不是 `T-010` 的补丁。
 - 本计划默认继承以下长期记忆文档：
-  - `<private-thesis-repo>/thesis/paper-outline.md`
-  - `<private-thesis-repo>/thesis/paper-evidence-map.md`
-  - `<private-thesis-repo>/thesis/paper-writing-log.md`
-- 本计划同时继承 `<private-notes>/plan_skill.md` 与 `<private-notes>/plan_skill2.md` 中已经稳定的主链路：
+  - `<your-thesis-repo>/thesis/paper-outline.md`
+  - `<your-thesis-repo>/thesis/paper-evidence-map.md`
+  - `<your-thesis-repo>/thesis/paper-writing-log.md`
+- 本计划同时继承 `<planning-notes>/plan_skill.md` 与 `<planning-notes>/plan_skill2.md` 中已经稳定的主链路：
   - `academic-paper-strategist -> doc-coauthoring -> graduation-thesis-editor -> academic-paper-composer`
 - 但在本轮明确固定：
   - 不重新调用 `$academic-paper-strategist`
   - 不进入 `$academic-paper-composer`
-  - 不把 `<private-reference>/2025.05.28.656357v1.full.pdf` 当作 `4.5 / 4.6` 的主事实源
+  - 不把 `<reference-materials>/2025.05.28.656357v1.full.pdf` 当作 `4.5 / 4.6` 的主事实源
   - `T-010` 已完成的 `4.1 -> 4.4` 视为前置稳定内容，本轮不重写，只做必要的整章级衔接复核
 
 ## 本章范围
@@ -52,9 +52,9 @@
 ## 启动前提
 - 已满足：
   - 第4章实验素材包 V2 已完成三层重组。
-  - `<private-thesis-repo>/thesis/paper-evidence-map.md` 中第4章边界与 `4.6` evidence 入口已经稳定。
-  - `<private-thesis-repo>/thesis/paper-writing-log.md` 已明确 `T-011` 默认读 `README.md + 结果分析层/`。
-  - `<private-thesis-repo>/thesis/document.tex` 与 `<private-thesis-repo>/thesis/chapter4-working-draft.md` 中已有 `4.5 / 4.6` 骨架占位。
+  - `<your-thesis-repo>/thesis/paper-evidence-map.md` 中第4章边界与 `4.6` evidence 入口已经稳定。
+  - `<your-thesis-repo>/thesis/paper-writing-log.md` 已明确 `T-011` 默认读 `README.md + 结果分析层/`。
+  - `<your-thesis-repo>/thesis/document.tex` 与 `<your-thesis-repo>/thesis/chapter4-working-draft.md` 中已有 `4.5 / 4.6` 骨架占位。
   - 第1章到第3章以及第4章前半部分已稳定，可为第4章正式 chapter-end reader testing 提供前文连续阅读上下文。
 - 若以下条件不满足，则不应直接执行本计划：
   - `结果分析层/` 与 `后台核对层/` 的边界重新摇摆。
@@ -63,35 +63,35 @@
 
 ## 必读材料
 - 论文蓝图：
-  - `<private-thesis-repo>/thesis/paper-outline.md`
+  - `<your-thesis-repo>/thesis/paper-outline.md`
 - 证据映射：
-  - `<private-thesis-repo>/thesis/paper-evidence-map.md`
+  - `<your-thesis-repo>/thesis/paper-evidence-map.md`
 - 写作日志：
-  - `<private-thesis-repo>/thesis/paper-writing-log.md`
+  - `<your-thesis-repo>/thesis/paper-writing-log.md`
 - 前序计划：
   - [PLAN4.md](PLAN4.md)
 - 第4章素材包根说明：
-  - `<private-reference>/README.md`
+  - `<reference-materials>/README.md`
 - 第4章素材包结果分析层：
-  - `<private-reference>/第四章结果边界与可写结论卡.md`
-  - `<private-reference>/第四章baseline结果卡.md`
-  - `<private-reference>/第四章单变量结果总表.md`
-  - `<private-reference>/第四章关键结果分析卡.md`
-  - `<private-reference>/第四章结果图表建议清单.md`
-  - `<private-reference>/第四章本章小结卡.md`
+  - `<reference-materials>/第四章结果边界与可写结论卡.md`
+  - `<reference-materials>/第四章baseline结果卡.md`
+  - `<reference-materials>/第四章单变量结果总表.md`
+  - `<reference-materials>/第四章关键结果分析卡.md`
+  - `<reference-materials>/第四章结果图表建议清单.md`
+  - `<reference-materials>/第四章本章小结卡.md`
 - 目标正文：
-  - `<private-thesis-repo>/thesis/chapter4-working-draft.md`
-  - `<private-thesis-repo>/thesis/document.tex`
-  - `<private-thesis-repo>/thesis/document.bib`
+  - `<your-thesis-repo>/thesis/chapter4-working-draft.md`
+  - `<your-thesis-repo>/thesis/document.tex`
+  - `<your-thesis-repo>/thesis/document.bib`
 
 ## 证据优先级
 - 第一优先：`README.md + 结果分析层/`
 - 第二优先：长期记忆三件套与 [PLAN4.md](PLAN4.md)
 - 第三优先：`后台核对层/` 仅用于核验 `assigned_ratio / n_valid_bins / n_pred`、图源、`promotion_review` 语境与 run-level 事实
 - 默认规则：
-  - 主起草阶段不把 `<private-reference>/2025.05.28.656357v1.full.pdf` 当作结果事实源。
+  - 主起草阶段不把 `<reference-materials>/2025.05.28.656357v1.full.pdf` 当作结果事实源。
   - `后台核对层/` 只用于核验，不直接抄原话入正文。
-  - `4.6` 默认先从 `<private-reference>/第四章结果边界与可写结论卡.md` 与 `<private-reference>/第四章本章小结卡.md` 取结论，不临场从 `后台核对层/` 拼接收束段落。
+  - `4.6` 默认先从 `<reference-materials>/第四章结果边界与可写结论卡.md` 与 `<reference-materials>/第四章本章小结卡.md` 取结论，不临场从 `后台核对层/` 拼接收束段落。
 
 ## 图表计划
 - `4.5.1` 固定对应：
@@ -108,7 +108,7 @@
 
 ## Skill 调用顺序
 1. 主起草流程
-- 用 `$doc-coauthoring` 在 `<private-thesis-repo>/thesis/chapter4-working-draft.md` 中继续完成：
+- 用 `$doc-coauthoring` 在 `<your-thesis-repo>/thesis/chapter4-working-draft.md` 中继续完成：
   - `4.5.1`
   - `4.5.2`
   - `4.5.3`
@@ -152,7 +152,7 @@
 
 ## 推荐章节微流程
 ### 阶段 A：确认第4章结果部分骨架
-- 在 `<private-thesis-repo>/thesis/chapter4-working-draft.md` 中确认以下骨架仍然存在：
+- 在 `<your-thesis-repo>/thesis/chapter4-working-draft.md` 中确认以下骨架仍然存在：
   - `4.5.1 基线实验结果`
   - `4.5.2 单变量参数对比结果`
   - `4.5.3 关键实验结果分析`
@@ -174,7 +174,7 @@
    - 把 candidate 写成 promoted baseline
    - supporting / workflow-support 数据集角色表达不清
    - 可视化讨论写成最终优劣证明
-4. 小节通过后继续下一节，不立刻并回 `<private-thesis-repo>/thesis/document.tex`。
+4. 小节通过后继续下一节，不立刻并回 `<your-thesis-repo>/thesis/document.tex`。
 
 ### 阶段 D：整章 reviewer 诊断
 - `4.5 / 4.6` 草稿完成后，必须调用一次 `$graduation-thesis-editor` 做第4章整章 reviewer 式检查，而不只检查后半章本身。
@@ -187,9 +187,9 @@
 - 如 reviewer 诊断暴露明显误读风险，应先修订，再进入整章关闭流程。
 
 ### 阶段 E：并回与编译
-- `4.5 / 4.6` 稳定后，将其并回 `<private-thesis-repo>/thesis/document.tex`。
+- `4.5 / 4.6` 稳定后，将其并回 `<your-thesis-repo>/thesis/document.tex`。
 - 并回时只更新第4章结果部分与本章小结，不回头重写 `4.1 -> 4.4`。
-- 编译只在 `4.5 / 4.6` 已并回 `<private-thesis-repo>/thesis/document.tex` 后执行。
+- 编译只在 `4.5 / 4.6` 已并回 `<your-thesis-repo>/thesis/document.tex` 后执行。
 - `document.bib` 默认不改；只有当 `4.5 / 4.6` 实际新增正文引用时，才补入对应条目。
 
 ### 阶段 F：第4章正式 chapter-end reader testing
@@ -293,24 +293,24 @@ Rules:
 Use $doc-coauthoring.
 
 Read first:
-- <private-thesis-repo>\文档\参考文献\写作计划\PLAN4p.md
-- <private-thesis-repo>\thesis\paper-outline.md
-- <private-thesis-repo>\thesis\paper-evidence-map.md
-- <private-thesis-repo>\thesis\paper-writing-log.md
-- <private-thesis-repo>\文档\参考文献\第四章实验素材包\README.md
-- <private-thesis-repo>\文档\参考文献\写作计划\PLAN4.md
-- <private-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章结果边界与可写结论卡.md
-- <private-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章baseline结果卡.md
-- <private-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章单变量结果总表.md
-- <private-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章关键结果分析卡.md
-- <private-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章结果图表建议清单.md
-- <private-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章本章小结卡.md
-- <private-thesis-repo>\thesis\chapter4-working-draft.md
-- <private-thesis-repo>\thesis\document.tex
-- <private-thesis-repo>\thesis\document.bib
+- <your-thesis-repo>\文档\参考文献\写作计划\PLAN4p.md
+- <your-thesis-repo>\thesis\paper-outline.md
+- <your-thesis-repo>\thesis\paper-evidence-map.md
+- <your-thesis-repo>\thesis\paper-writing-log.md
+- <your-thesis-repo>\文档\参考文献\第四章实验素材包\README.md
+- <your-thesis-repo>\文档\参考文献\写作计划\PLAN4.md
+- <your-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章结果边界与可写结论卡.md
+- <your-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章baseline结果卡.md
+- <your-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章单变量结果总表.md
+- <your-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章关键结果分析卡.md
+- <your-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章结果图表建议清单.md
+- <your-thesis-repo>\文档\参考文献\第四章实验素材包\结果分析层\第四章本章小结卡.md
+- <your-thesis-repo>\thesis\chapter4-working-draft.md
+- <your-thesis-repo>\thesis\document.tex
+- <your-thesis-repo>\thesis\document.bib
 
 Task:
-继续维护 `<private-thesis-repo>\thesis\chapter4-working-draft.md`，按 `4.5.1 -> 4.5.2 -> 4.5.3 -> 4.5.4 -> 4.6` 的顺序共写第4章结果部分与本章小结。
+继续维护 `<your-thesis-repo>\thesis\chapter4-working-draft.md`，按 `4.5.1 -> 4.5.2 -> 4.5.3 -> 4.5.4 -> 4.6` 的顺序共写第4章结果部分与本章小结。
 
 Rules:
 - 默认主读入入口是 `README.md + 结果分析层/`。
@@ -324,23 +324,23 @@ Rules:
 ```
 
 ## 编译规则
-- 只有在第4章结果部分已经并回 `<private-thesis-repo>/thesis/document.tex` 后，才执行编译。
+- 只有在第4章结果部分已经并回 `<your-thesis-repo>/thesis/document.tex` 后，才执行编译。
 - 编译 recipe：
   - VS Code LaTeX Workshop `latexmk (xelatex)`
 - 配置来源：
-  - `<private-thesis-repo>/.vscode/settings.json`
+  - `<your-thesis-repo>/.vscode/settings.json`
 - 输出目录：
-  - `<private-thesis-repo>\thesis\build\`
+  - `<your-thesis-repo>\thesis\build\`
 
 ## 执行后同步
 - 创建 `PLAN4p.md` 后，至少同步：
-  - `<private-thesis-repo>/thesis/paper-writing-log.md`
+  - `<your-thesis-repo>/thesis/paper-writing-log.md`
 - 启动 `T-011` 并完成 `4.5 / 4.6` working draft 后，至少同步：
-  - `<private-thesis-repo>/thesis/paper-writing-log.md`
-  - `<private-thesis-repo>/thesis/chapter4-working-draft.md`
+  - `<your-thesis-repo>/thesis/paper-writing-log.md`
+  - `<your-thesis-repo>/thesis/chapter4-working-draft.md`
 - 如果结果部分已经并回正式骨架，再同步：
-  - `<private-thesis-repo>/thesis/document.tex`
-  - 必要时同步 `<private-thesis-repo>/thesis/document.bib`
+  - `<your-thesis-repo>/thesis/document.tex`
+  - 必要时同步 `<your-thesis-repo>/thesis/document.bib`
 - 第4章正式 chapter-end reader testing 完成后，必须在日志中登记：
   - 是否执行
   - 主测读取范围
@@ -352,10 +352,10 @@ Rules:
 - `PLAN4p.md` 明确只服务 `4.5 / 4.6` 与第4章关闭，不回头重写 `4.1 -> 4.4`。
 - `PLAN4p.md` 的默认读入入口明确为 `README.md + 结果分析层/`。
 - `PLAN4p.md` 已写死 `4.5.1 -> 4.5.4` 与 `4.6` 的禁写点，不会把 `EXP-007` 写成已 promoted baseline，也不会破坏四数据集角色层级。
-- `PLAN4p.md` 已写死唯一 working draft 为 `<private-thesis-repo>/thesis/chapter4-working-draft.md`。
-- `PLAN4p.md` 已写死 `4.6` 默认以 `<private-reference>/第四章结果边界与可写结论卡.md` 和 `<private-reference>/第四章本章小结卡.md` 为收口入口。
+- `PLAN4p.md` 已写死唯一 working draft 为 `<your-thesis-repo>/thesis/chapter4-working-draft.md`。
+- `PLAN4p.md` 已写死 `4.6` 默认以 `<reference-materials>/第四章结果边界与可写结论卡.md` 和 `<reference-materials>/第四章本章小结卡.md` 为收口入口。
 - `PLAN4p.md` 已区分 `T-010` 的 slice-end reviewer 诊断与 `T-011` 的正式 chapter-end reader testing。
-- `PLAN4p.md` 已写死编译方式为 `<private-thesis-repo>/.vscode/settings.json` 中的 `latexmk (xelatex)`，输出到 `thesis/build/`。
+- `PLAN4p.md` 已写死编译方式为 `<your-thesis-repo>/.vscode/settings.json` 中的 `latexmk (xelatex)`，输出到 `thesis/build/`。
 
 ## 禁止事项
 - 不要把 `PLAN4p.md` 写成整篇论文总计划。
@@ -364,3 +364,4 @@ Rules:
 - 不要把 `Human Ovarian` 或两个 Xenium 数据集升级成并列主结果线。
 - 不要把 `4.6` 写成第5章总结与展望的提前展开。
 - 不要在第4章整章未稳定时提前进入 `$academic-paper-composer`。
+

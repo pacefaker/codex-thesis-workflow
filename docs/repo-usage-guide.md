@@ -1,100 +1,96 @@
 # Repo Usage Guide
 
-这一节写给想复用这套方法的人。
+这一节写给想把这套方法迁移到自己论文项目里的人。
 
-## 1. 不要直接复制论文正文
+## 1. 先搭建最小骨架
 
-这个仓库能复用的是：
+如果你准备复用这套流程，建议先建立 3 份长期 authority 文档：
 
-- 工作流
-- 计划结构
-- 素材包结构
-- skill 分工
-- prompt 路由思想
+1. `paper-outline.md`
+2. `paper-evidence-map.md`
+3. `paper-writing-log.md`
 
-不能直接复用的是：
+它们分别负责结构、证据边界和阶段状态，是整个工作流稳定推进的基础。
 
-- 论文事实
-- 实验结论
-- 数据集角色
-- 章节内容
+## 2. 再为每章建立素材包
 
-## 2. 最低复现方式
+每章至少准备 3 类材料：
 
-如果你也想按这套方法写论文，最低配置是：
+1. 正文可写层
+2. 结果分析层
+3. 核对层
 
-1. 建 3 个长期 authority 文档
-2. 给每章建立素材包
-3. 至少准备 2 个主 skill：
-   - `doc-coauthoring`
-   - `graduation-thesis-editor`
+这样做的好处是：
 
-如果想更完整复现，再加：
+- 写作时更容易区分“可直接写入正文的内容”和“仅用于核验的内容”
+- 重写某一章时能快速回到该章的 authority 和材料入口
+- 实验章、结果章和摘要更容易保持事实边界一致
+
+## 3. 最小 skill 组合
+
+如果你只想先把主链搭起来，最小组合可以是：
+
+1. `doc-coauthoring`
+2. `graduation-thesis-editor`
+
+如果想把全文收口链路也搭完整，再加入：
 
 - `thesis-closeout-reviewer`
 - `academic-paper-reviewer`
 - `humanizer`
 
-## 3. 推荐起步顺序
+## 4. 推荐起步顺序
 
-1. 先读 [workflow-overview.md](workflow-overview.md)
-2. 再读 [skill-map.md](skill-map.md)
-3. 再看 [skill-sources-and-adaptations.md](skill-sources-and-adaptations.md)
-4. 最后参考：
-   - [workflow-assets/plans](../workflow-assets/plans)
-   - [workflow-assets/materials/README.md](../workflow-assets/materials/README.md)
+建议按下面的顺序理解整个仓库：
 
-## 4. 最值得学的不是“句子”，而是“结构”
+1. [workflow-overview.md](workflow-overview.md)
+2. [skill-map.md](skill-map.md)
+3. [skill-sources-and-adaptations.md](skill-sources-and-adaptations.md)
+4. [workflow-assets/materials/README.md](../workflow-assets/materials/README.md)
+5. [workflow-assets/plans](../workflow-assets/plans)
 
-最值得复用的是：
+## 5. 最值得借鉴的是“结构”
+
+这个仓库最值得复用的不是某一句 prompt，而是下面这几类结构设计：
 
 - 每章素材包如何分层
-- 每个阶段怎么写计划
-- skill 如何分工
-- 为什么要把局部编辑和整篇审稿分开
+- 每个阶段的计划文档如何写
+- skill 如何按职责分工
+- 为什么要把章节起草、局部修改、全文审稿和终稿打磨拆开
 
-## 5. 如果你也想做自己的本地论文 skill
+## 6. 如果你也想做自己的本地论文 skill
 
-最简单的路线是：
+最简单的路线通常是：
 
-1. 先找到一组你真的反复在用的 prompt
-2. 不要急着做很多 skill
-3. 先把它们压成一个本地 skill
-4. 明确 route
-5. 明确 handoff 边界
+1. 先找到一组自己会反复调用的 prompt
+2. 先把它们收敛成一个本地 skill，而不是一下做很多 skill
+3. 为这个 skill 明确 route
+4. 为这个 skill 明确 handoff 边界
+5. 再逐步补充脚本、引用说明和说明文档
 
-例如我这次就是：
+例如本仓库中的 `graduation-thesis-editor`，就是把 `awesome-ai-research-writing` Part I 的局部任务整理成了一个 route-first 的本地 skill。
 
-- 不是把 `awesome-ai-research-writing` 的 prompt 原封不动逐条手贴使用
-- 而是把其中最常用的局部任务压成 `graduation-thesis-editor`
-
-## 6. 如果你已经有初稿
-
-不要直接全篇盲润。
+## 7. 如果你已经有初稿
 
 更稳的顺序通常是：
 
 1. 先用 `thesis-closeout-reviewer` 找问题
 2. 再用 `graduation-thesis-editor` 修局部问题
 3. 再用 `academic-paper-reviewer` 做复审
-4. 最后才用 `humanizer`
+4. 最后用 `humanizer` 做轻量语言打磨
 
-## 7. 如果你还没有开始写
+## 8. 如果你还没有开始写
 
-不要上来就让 AI “写一篇论文”。
-
-更稳的顺序是：
+推荐的顺序通常是：
 
 1. 先建 authority
 2. 再做章节素材包
-3. 再让 `doc-coauthoring` 起草各章
-4. 再引入 `graduation-thesis-editor`
+3. 再让 `doc-coauthoring` 起草各章 working draft
+4. 再引入 `graduation-thesis-editor` 做章节级修补
 
-## 8. 如果你要分享给同学
-
-最适合先发给同学的文件是：
+## 9. 作为快速入口的阅读列表
 
 1. [README.md](../README.md)
 2. [workflow-overview.md](workflow-overview.md)
 3. [skill-map.md](skill-map.md)
-4. [examples/quickstart-for-classmates.md](../examples/quickstart-for-classmates.md)
+4. [examples/quickstart.md](../examples/quickstart.md)

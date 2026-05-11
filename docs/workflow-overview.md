@@ -31,8 +31,6 @@ authority 是项目长期记忆。
 - `paper-evidence-map.md`
 - `paper-writing-log.md`
 
-公开版不附带这些私有文件正文，但保留了它们在工作流中的角色定义。
-
 ## 3. 素材包层
 
 素材包层是这套方法最关键的部分之一。
@@ -51,7 +49,7 @@ authority 是项目长期记忆。
 - 可写事实和后台核验信息不会混成一团
 - 重写某章时可以快速定位 authority
 
-公开版只保留结构说明，见 [workflow-assets/materials/README.md](../workflow-assets/materials/README.md)。
+一个代表性的结构示意见 [workflow-assets/materials/README.md](../workflow-assets/materials/README.md)。
 
 ## 4. 阶段计划层
 
@@ -68,8 +66,6 @@ authority 是项目长期记忆。
 - 本轮的验收标准是什么
 
 这就是为什么本仓库保留了整组 [workflow-assets/plans](../workflow-assets/plans)。
-
-公开版中的计划文件已经脱敏，重点保留的是结构和执行逻辑。
 
 ## 5. skill 执行层
 

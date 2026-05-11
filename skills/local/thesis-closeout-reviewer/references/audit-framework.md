@@ -12,7 +12,7 @@ In the original local workflow, findings were always grounded against three proj
 
 Public repository note:
 
-- The public repo does not ship those private files.
+- The repository does not include those source files directly.
 - It preserves the audit logic that depends on them.
 
 ## Audit Dimension 1: Spec Audit

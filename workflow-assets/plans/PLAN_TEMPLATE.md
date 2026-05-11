@@ -1,4 +1,4 @@
-# 章节执行计划模板
+﻿# 章节执行计划模板
 
 ## 摘要
 - 本计划仅服务于 `[章节名 / 任务切片名]`，不自动扩展到整篇论文。
@@ -9,9 +9,9 @@
 ## 计划定位
 - 这是一个“章节级执行计划”，不是整篇论文总计划。
 - 它默认继承：
-  - `<private-thesis-repo>\thesis\paper-outline.md`
-  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
-  - `<private-thesis-repo>\thesis\paper-writing-log.md`
+  - `<your-thesis-repo>\thesis\paper-outline.md`
+  - `<your-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<your-thesis-repo>\thesis\paper-writing-log.md`
 - 它必须服从当前冻结版论文结构、章节证据边界和数据集角色口径。
 
 ## 本章范围
@@ -36,11 +36,11 @@
 
 ## 必读材料
 - 论文蓝图：
-  - `<private-thesis-repo>\thesis\paper-outline.md`
+  - `<your-thesis-repo>\thesis\paper-outline.md`
 - 证据映射：
-  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<your-thesis-repo>\thesis\paper-evidence-map.md`
 - 写作日志：
-  - `<private-thesis-repo>\thesis\paper-writing-log.md`
+  - `<your-thesis-repo>\thesis\paper-writing-log.md`
 - 本章素材包：
   - [填写本章素材包路径]
 - 目标正文文件：
@@ -211,9 +211,9 @@ Rules:
 - 编译 recipe：
   - [例如：VS Code LaTeX Workshop `latexmk (xelatex)`]
 - 配置来源：
-  - [例如：`<private-thesis-repo>\.vscode\settings.json`]
+  - [例如：`<your-thesis-repo>\.vscode\settings.json`]
 - 输出目录：
-  - [例如：`<private-thesis-repo>\thesis\build\`]
+  - [例如：`<your-thesis-repo>\thesis\build\`]
 
 ## 执行后同步
 - 本轮完成后，至少同步：
@@ -242,3 +242,4 @@ Rules:
 - 不要用 `$graduation-thesis-editor` 代替空白起草。
 - 不要把两个 editor prompt 混成一个自定义 prompt。
 - 不要在章节草稿还不稳定时提前进入 composer 定稿流程。
+

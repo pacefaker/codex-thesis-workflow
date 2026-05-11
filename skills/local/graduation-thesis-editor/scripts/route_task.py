@@ -80,14 +80,14 @@ def decision_for_goal(goal: str, has_draft: str, prefer_editor_deai: bool, targe
             return Decision("handoff", None, None, None, handoff["handoff_skill"], handoff["reason"])
         route_id = "GTE-R-DEAI-LATEX" if target_language == "english" else "GTE-R-DEAI-WORD"
         route = get_route(route_id)
-        return Decision("route", route_id, f"{route.source_file} :: {route.heading}", "public-safe summary", None, "Use the internal fallback de-AI route summary.")
+        return Decision("route", route_id, f"{route.source_file} :: {route.heading}", "repository summary", None, "Use the internal fallback de-AI route summary.")
 
     if goal not in GOAL_TO_ROUTE:
         raise ValueError(f"Unsupported goal: {goal}")
 
     route_id = GOAL_TO_ROUTE[goal]
     route = get_route(route_id)
-    return Decision("route", route_id, f"{route.source_file} :: {route.heading}", "public-safe summary", None, route.use_when)
+    return Decision("route", route_id, f"{route.source_file} :: {route.heading}", "repository summary", None, route.use_when)
 
 
 def render_text(decisions: list[Decision]) -> str:

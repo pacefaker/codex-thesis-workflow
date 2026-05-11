@@ -1,19 +1,19 @@
-# T-009R 第三章重写执行计划
+﻿# T-009R 第三章重写执行计划
 
 ## 摘要
 - 本计划只服务于第3章重写，不扩展到第4章到第5章正文。
 - 本轮目标不是沿用旧 `T-009` 口径做小修，而是基于第三章素材包 V2，按“方法设计 + 最少必要实现机制”重写第3章 `3.1 -> 3.6` 的 working draft。
 - 主流程固定为 `$doc-coauthoring`，局部编辑固定为 `$graduation-thesis-editor`；不重新调用 `$academic-paper-strategist`，也不进入 `$academic-paper-composer`。
-- 编译规则继续固定为 VS Code LaTeX Workshop 的 `latexmk (xelatex)`，严格按 `<private-thesis-repo>/.vscode/settings.json` 执行，输出到 `<private-thesis-repo>\thesis\build\`。
-- 落稿策略固定为“先侧写 working draft，再并回正式骨架”；第3章唯一工作草稿仍固定为 `<private-thesis-repo>/thesis/chapter3-working-draft.md`。
+- 编译规则继续固定为 VS Code LaTeX Workshop 的 `latexmk (xelatex)`，严格按 `<your-thesis-repo>/.vscode/settings.json` 执行，输出到 `<your-thesis-repo>\thesis\build\`。
+- 落稿策略固定为“先侧写 working draft，再并回正式骨架”；第3章唯一工作草稿仍固定为 `<your-thesis-repo>/thesis/chapter3-working-draft.md`。
 
 ## 计划定位
 - 这是“第3章重写专项计划”，不是整篇论文总计划。
 - 本计划默认继承以下 authority：
-  - `<private-thesis-repo>/thesis/paper-outline.md`
-  - `<private-thesis-repo>/thesis/paper-evidence-map.md`
-  - `<private-thesis-repo>/thesis/paper-writing-log.md`
-  - `<private-reference>/README.md`
+  - `<your-thesis-repo>/thesis/paper-outline.md`
+  - `<your-thesis-repo>/thesis/paper-evidence-map.md`
+  - `<your-thesis-repo>/thesis/paper-writing-log.md`
+  - `<reference-materials>/README.md`
 - 本计划明确是旧 `T-009` 完成后的重收口续篇，因此内部任务编号统一切换为 `T-009R`。
 - 本计划不再引用旧版单层素材包 authority 文件；所有第三章写作入口统一切换到 V2 双层素材包。
 
@@ -44,8 +44,8 @@
 - 已满足：
   - 第1章和第2章已完成，可为第3章提供前文上下文。
   - 第三章素材包 V2 已完成，且已分为“正文可写层 / 后台核对层”。
-  - `<private-thesis-repo>/thesis/document.tex` 中已有第3章骨架。
-  - `<private-thesis-repo>/thesis/paper-outline.md` 与 `<private-thesis-repo>/thesis/paper-evidence-map.md` 已完成第三章口径收紧。
+  - `<your-thesis-repo>/thesis/document.tex` 中已有第3章骨架。
+  - `<your-thesis-repo>/thesis/paper-outline.md` 与 `<your-thesis-repo>/thesis/paper-evidence-map.md` 已完成第三章口径收紧。
 - 若以下条件不满足，不应直接执行本计划：
   - 第3章职责再次与第2章或第4章混淆。
   - 第三章素材包 V2 路径失效。
@@ -53,26 +53,26 @@
 
 ## 必读材料
 - 长期记忆三件套：
-  - `<private-thesis-repo>/thesis/paper-outline.md`
-  - `<private-thesis-repo>/thesis/paper-evidence-map.md`
-  - `<private-thesis-repo>/thesis/paper-writing-log.md`
+  - `<your-thesis-repo>/thesis/paper-outline.md`
+  - `<your-thesis-repo>/thesis/paper-evidence-map.md`
+  - `<your-thesis-repo>/thesis/paper-writing-log.md`
 - 第三章素材包 V2 根说明：
-  - `<private-reference>/README.md`
+  - `<reference-materials>/README.md`
 - 第三章素材包 V2 正文可写层：
-  - `<private-reference>/第三章写作总纲.md`
-  - `<private-reference>/第三章分节起草卡.md`
-  - `<private-reference>/第三章最少必要机制卡.md`
-  - `<private-reference>/第三章图表建议清单.md`
+  - `<reference-materials>/第三章写作总纲.md`
+  - `<reference-materials>/第三章分节起草卡.md`
+  - `<reference-materials>/第三章最少必要机制卡.md`
+  - `<reference-materials>/第三章图表建议清单.md`
 - 第三章素材包 V2 后台核对层：
-  - `<private-reference>/第三章流程核对总表.md`
-  - `<private-reference>/第三章参数核对表.md`
-  - `<private-reference>/第三章运行事实附录.md`
-  - `<private-reference>/第三章图产物索引.md`
+  - `<reference-materials>/第三章流程核对总表.md`
+  - `<reference-materials>/第三章参数核对表.md`
+  - `<reference-materials>/第三章运行事实附录.md`
+  - `<reference-materials>/第三章图产物索引.md`
 - 目标正文与文献库：
-  - `<private-thesis-repo>/thesis/document.tex`
-  - `<private-thesis-repo>/thesis/document.bib`
+  - `<your-thesis-repo>/thesis/document.tex`
+  - `<your-thesis-repo>/thesis/document.bib`
 - 外部方法来源与术语核对材料：
-  - `<private-reference>/2025.05.28.656357v1.full.pdf`
+  - `<reference-materials>/2025.05.28.656357v1.full.pdf`
   - `https://the-mitra-lab.github.io/SMURF/index.html`
   - `https://the-mitra-lab.github.io/SMURF/Data_structure/index.html`
   - `https://the-mitra-lab.github.io/SMURF/api/reference/smurf.make_preparation.html`
@@ -127,7 +127,7 @@
   - `Reader Testing`
 - 由于本章已经具备长期记忆与素材包 V2，`Context Gathering` 的输入固定由本计划的“必读材料”清单承担，不再临场自由发散。
 - 用 `$doc-coauthoring` 创建并维护唯一 working draft：
-  - `<private-thesis-repo>/thesis/chapter3-working-draft.md`
+  - `<your-thesis-repo>/thesis/chapter3-working-draft.md`
 
 ### 2. 局部编辑：`$graduation-thesis-editor`
 - `$graduation-thesis-editor` 只用于已有草稿后的局部编辑、逻辑检查和 reviewer 诊断。
@@ -176,7 +176,7 @@
 
 ## 分阶段流程
 ### 阶段 A：建立第3章 working draft 骨架
-- 用 `$doc-coauthoring` 打开并重写 `<private-thesis-repo>/thesis/chapter3-working-draft.md`。
+- 用 `$doc-coauthoring` 打开并重写 `<your-thesis-repo>/thesis/chapter3-working-draft.md`。
 - 固定六个小节骨架：
   - `3.1`
   - `3.2`
@@ -195,7 +195,7 @@
 1. 先由 `$doc-coauthoring` 完成该节的“要点筛选 + 小节草稿”。
 2. 草稿完成后立刻对照 V2 素材包正文可写层做边界检查。
 3. 若存在语言重复、逻辑跳跃、来源边界混淆、章节越界，再调用 `$graduation-thesis-editor`。
-4. 小节通过后继续下一个小节，不立刻并回 `<private-thesis-repo>/thesis/document.tex`。
+4. 小节通过后继续下一个小节，不立刻并回 `<your-thesis-repo>/thesis/document.tex`。
 
 ### 阶段 D：整章级复核
 - 六节完成后，用 `$graduation-thesis-editor` 做一次 reviewer 式整章诊断。
@@ -210,7 +210,7 @@
 - 若 reader testing 暴露明显误读风险，先修订，再做一次轻量复测后才允许关闭本章。
 
 ### 阶段 E：并回与编译
-- 只有在整章 working draft 稳定后，才一次性并回 `<private-thesis-repo>/thesis/document.tex`。
+- 只有在整章 working draft 稳定后，才一次性并回 `<your-thesis-repo>/thesis/document.tex`。
 - `document.bib` 只补本章最终实际新增使用条目。
 - 编译只在并回后执行。
 - 整篇论文主体章节起草完成后，必须显式调用 fresh-reader 子智能体再做一次全文 reader testing，不能按需跳过。
@@ -239,25 +239,25 @@
 Use $doc-coauthoring.
 
 Read first:
-- <private-thesis-repo>\文档\参考文献\写作计划\PLAN3.md
-- <private-thesis-repo>\thesis\paper-outline.md
-- <private-thesis-repo>\thesis\paper-evidence-map.md
-- <private-thesis-repo>\thesis\paper-writing-log.md
-- <private-thesis-repo>\文档\参考文献\第三章方法素材包\README.md
-- <private-thesis-repo>\文档\参考文献\第三章方法素材包\正文可写层\第三章写作总纲.md
-- <private-thesis-repo>\文档\参考文献\第三章方法素材包\正文可写层\第三章分节起草卡.md
-- <private-thesis-repo>\文档\参考文献\第三章方法素材包\正文可写层\第三章最少必要机制卡.md
-- <private-thesis-repo>\文档\参考文献\第三章方法素材包\正文可写层\第三章图表建议清单.md
-- <private-thesis-repo>\文档\2025.05.28.656357v1.full.pdf
+- <your-thesis-repo>\文档\参考文献\写作计划\PLAN3.md
+- <your-thesis-repo>\thesis\paper-outline.md
+- <your-thesis-repo>\thesis\paper-evidence-map.md
+- <your-thesis-repo>\thesis\paper-writing-log.md
+- <your-thesis-repo>\文档\参考文献\第三章方法素材包\README.md
+- <your-thesis-repo>\文档\参考文献\第三章方法素材包\正文可写层\第三章写作总纲.md
+- <your-thesis-repo>\文档\参考文献\第三章方法素材包\正文可写层\第三章分节起草卡.md
+- <your-thesis-repo>\文档\参考文献\第三章方法素材包\正文可写层\第三章最少必要机制卡.md
+- <your-thesis-repo>\文档\参考文献\第三章方法素材包\正文可写层\第三章图表建议清单.md
+- <your-thesis-repo>\文档\2025.05.28.656357v1.full.pdf
 - https://the-mitra-lab.github.io/SMURF/index.html
 - https://the-mitra-lab.github.io/SMURF/Data_structure/index.html
 - https://the-mitra-lab.github.io/SMURF/api/reference/smurf.make_preparation.html
 - https://the-mitra-lab.github.io/SMURF/api/reference/smurf.make_pixels_cells.html
-- <private-thesis-repo>\thesis\document.tex
-- <private-thesis-repo>\thesis\document.bib
+- <your-thesis-repo>\thesis\document.tex
+- <your-thesis-repo>\thesis\document.bib
 
 Task:
-Rewrite <private-thesis-repo>\thesis\chapter3-working-draft.md and co-author Chapter 3 in this order:
+Rewrite <your-thesis-repo>\thesis\chapter3-working-draft.md and co-author Chapter 3 in this order:
 3.1 -> 3.2 -> 3.3 -> 3.4 -> 3.5 -> 3.6
 
 Rules:
@@ -324,25 +324,25 @@ Rules:
 ```
 
 ## 编译规则
-- 只有在第3章 working draft 已经并回 `<private-thesis-repo>/thesis/document.tex` 后，才执行编译。
+- 只有在第3章 working draft 已经并回 `<your-thesis-repo>/thesis/document.tex` 后，才执行编译。
 - 编译 recipe：
   - VS Code LaTeX Workshop `latexmk (xelatex)`
 - 配置来源：
-  - `<private-thesis-repo>/.vscode/settings.json`
+  - `<your-thesis-repo>/.vscode/settings.json`
 - 输出目录：
-  - `<private-thesis-repo>\thesis\build\`
+  - `<your-thesis-repo>\thesis\build\`
 - 对应配置依据：
   - `latex-workshop.latex.outDir = "./build"`
 
 ## 执行后同步
 - 本轮完成后，至少同步：
-  - `<private-thesis-repo>/thesis/paper-writing-log.md`
+  - `<your-thesis-repo>/thesis/paper-writing-log.md`
 - 若第3章边界、allowed claims、图表落点发生变化，再同步：
-  - `<private-thesis-repo>/thesis/paper-evidence-map.md`
+  - `<your-thesis-repo>/thesis/paper-evidence-map.md`
 - 若第3章重写后并回正式正文，再同步：
-  - `<private-thesis-repo>/thesis/document.tex`
-  - `<private-thesis-repo>/thesis/document.bib`
-- chapter-end reader testing 完成后，必须在 `<private-thesis-repo>/thesis/paper-writing-log.md` 中登记：
+  - `<your-thesis-repo>/thesis/document.tex`
+  - `<your-thesis-repo>/thesis/document.bib`
+- chapter-end reader testing 完成后，必须在 `<your-thesis-repo>/thesis/paper-writing-log.md` 中登记：
   - 是否执行
   - 主测读取范围
   - 是否做了只读第3章的补测
@@ -354,11 +354,11 @@ Rules:
 - `PLAN3.md` 标题已改为 `T-009R 第三章重写执行计划`。
 - `PLAN3.md` 不再引用旧版第三章根目录 authority 文件。
 - `PLAN3.md` 已明确“正文可写层优先、后台核对层次之、官网/API 仅做术语核对”的证据优先级。
-- `PLAN3.md` 中的 `3.1` 到 `3.6` 边界与 `<private-thesis-repo>/thesis/paper-evidence-map.md` 完全一致。
+- `PLAN3.md` 中的 `3.1` 到 `3.6` 边界与 `<your-thesis-repo>/thesis/paper-evidence-map.md` 完全一致。
 - `PLAN3.md` 已写死第3章默认主 reader testing 范围为“第1章 + 第2章 + 第3章”。
 - `PLAN3.md` 已明确章节级 reader testing 默认采用“前文连续阅读优先”的规则，而不是默认只读当前章。
 - `PLAN3.md` 已写死编译方式为 `.vscode/settings.json` 中的 `latexmk (xelatex)`，输出到 `thesis/build/`。
-- `PLAN3.md` 仍把 `<private-thesis-repo>/thesis/chapter3-working-draft.md` 作为唯一工作草稿文件。
+- `PLAN3.md` 仍把 `<your-thesis-repo>/thesis/chapter3-working-draft.md` 作为唯一工作草稿文件。
 - 每次 `$graduation-thesis-editor` 调用都必须 route-first。
 - 第3章关闭前已经显式完成至少 1 轮子智能体 chapter-end reader testing。
 - 第3章重写前不提前进入 `$academic-paper-composer`。
@@ -369,3 +369,4 @@ Rules:
 - 不要把多个 editor prompt 合并成一次调用。
 - 不要在第3章 working draft 尚未稳定时提前并回正式正文。
 - 不要把官网/API 页当成高于本地素材包的正文事实源。
+

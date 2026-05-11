@@ -1,19 +1,19 @@
-# T-007 第一章执行计划
+﻿# T-007 第一章执行计划
 
 ## 摘要
 - 本计划只服务于第1章，不扩展到第2章到第5章正文。
 - 本轮目标是完成第1章 `1.1 -> 1.2 -> 1.3 -> 1.4` 的 working draft，并在稳定后再并回 `document.tex`。
 - 主流程仍然是 `$doc-coauthoring`，这一点和之前保持一致。
 - `$graduation-thesis-editor` 仍然只承担局部编辑、逻辑检查和 reviewer 诊断；这次唯一实质增强的是加入了全局 route-first 调用规则。
-- 编译方式固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，并严格按照 `<private-thesis-repo>/.vscode/settings.json` 中现有 `.vscode/settings.json` 配置执行；输出目录遵循 `latex-workshop.latex.outDir = "./build"`，即 `<private-thesis-repo>\thesis\build\`。
+- 编译方式固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，并严格按照 `<your-thesis-repo>/.vscode/settings.json` 中现有 `.vscode/settings.json` 配置执行；输出目录遵循 `latex-workshop.latex.outDir = "./build"`，即 `<your-thesis-repo>\thesis\build\`。
 - 落稿策略固定为“先侧写 working draft，再并回 `document.tex`”，不直接在正式骨架里边写边改。
 
 ## 计划定位
 - 这是“第一章专项计划”，不是整篇论文总计划。
 - 本计划默认继承以下长期记忆文档：
-  - `<private-thesis-repo>\thesis\paper-outline.md`
-  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
-  - `<private-thesis-repo>\thesis\paper-writing-log.md`
+  - `<your-thesis-repo>\thesis\paper-outline.md`
+  - `<your-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<your-thesis-repo>\thesis\paper-writing-log.md`
 
 ## 本章范围
 - 只写：
@@ -45,22 +45,22 @@
 
 ## 必读材料
 - 论文蓝图：
-  - `<private-thesis-repo>\thesis\paper-outline.md`
+  - `<your-thesis-repo>\thesis\paper-outline.md`
 - 证据映射：
-  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<your-thesis-repo>\thesis\paper-evidence-map.md`
 - 写作日志：
-  - `<private-thesis-repo>\thesis\paper-writing-log.md`
+  - `<your-thesis-repo>\thesis\paper-writing-log.md`
 - 第一章素材包：
-  - `<private-thesis-repo>\文档\参考文献\第一章引言素材包\README.md`
-  - `<private-thesis-repo>\文档\参考文献\第一章引言素材包\第一章研究现状目录.md`
-  - `<private-thesis-repo>\文档\参考文献\第一章引言素材包\第一章分节起草卡.md`
+  - `<your-thesis-repo>\文档\参考文献\第一章引言素材包\README.md`
+  - `<your-thesis-repo>\文档\参考文献\第一章引言素材包\第一章研究现状目录.md`
+  - `<your-thesis-repo>\文档\参考文献\第一章引言素材包\第一章分节起草卡.md`
 - 目标正文：
-  - `<private-thesis-repo>\thesis\document.tex`
+  - `<your-thesis-repo>\thesis\document.tex`
 
 ## Skill 调用顺序
 1. 主起草流程
 - 用 `$doc-coauthoring` 创建：
-  - `<private-thesis-repo>\thesis\chapter1-working-draft.md`
+  - `<your-thesis-repo>\thesis\chapter1-working-draft.md`
 - 然后按以下顺序推进：
   - `1.1`
   - `1.2`
@@ -92,7 +92,7 @@
 - 本计划中不使用 `$academic-paper-composer`。
 
 6. 默认不再调用的 skill
-- 本计划默认不再调用 `$academic-paper-strategist`，这个 skill 只适合“第1章到第5章 working draft 都稳定之后”的定稿收口，不适合第1章启动阶段。
+- 本计划默认不再调用 `$academic-paper-strategist`，这个 skill 默认放在“第1章到第5章 working draft 都稳定之后”的定稿收口阶段使用，而不是作为第1章启动阶段的主 skill。
 - 只有在以下情况发生时，才允许回到 strategist：
   - 第1章结构发生改动
   - 四数据集角色口径发生变化
@@ -146,7 +146,7 @@
 - 若 reader testing 发现明显误读风险，应先修订，再进行一次轻量复测后才允许关闭第1章。
 
 ### 阶段 E：并回正式 LaTeX 骨架
-- 只有在整章 working draft 稳定后，才一次性并回 `<private-thesis-repo>\thesis\document.tex`。
+- 只有在整章 working draft 稳定后，才一次性并回 `<your-thesis-repo>\thesis\document.tex`。
 - 并回时再把作者-年份式引用占位转换成正式 LaTeX 引用形式。
 - `document.bib` 只补“第1章最终实际用到”的条目，不提前批量灌入所有候选文献。
 
@@ -221,16 +221,16 @@ Rules:
 Use $doc-coauthoring.
 
 Read first:
-- <private-thesis-repo>\thesis\paper-outline.md
-- <private-thesis-repo>\thesis\paper-evidence-map.md
-- <private-thesis-repo>\thesis\paper-writing-log.md
-- <private-thesis-repo>\文档\参考文献\第一章引言素材包\README.md
-- <private-thesis-repo>\文档\参考文献\第一章引言素材包\第一章研究现状目录.md
-- <private-thesis-repo>\文档\参考文献\第一章引言素材包\第一章分节起草卡.md
-- <private-thesis-repo>\thesis\document.tex
+- <your-thesis-repo>\thesis\paper-outline.md
+- <your-thesis-repo>\thesis\paper-evidence-map.md
+- <your-thesis-repo>\thesis\paper-writing-log.md
+- <your-thesis-repo>\文档\参考文献\第一章引言素材包\README.md
+- <your-thesis-repo>\文档\参考文献\第一章引言素材包\第一章研究现状目录.md
+- <your-thesis-repo>\文档\参考文献\第一章引言素材包\第一章分节起草卡.md
+- <your-thesis-repo>\thesis\document.tex
 
 Task:
-创建 `<private-thesis-repo>\thesis\chapter1-working-draft.md`，并按 `1.1 -> 1.2 -> 1.3 -> 1.4` 的顺序共写第1章。
+创建 `<your-thesis-repo>\thesis\chapter1-working-draft.md`，并按 `1.1 -> 1.2 -> 1.3 -> 1.4` 的顺序共写第1章。
 
 Rules:
 - `1.2` 只保持在研究现状层面。
@@ -243,21 +243,21 @@ Rules:
 ```
 
 ## 编译规则
-- 只有在第1章 working draft 已经并回 `<private-thesis-repo>\thesis\document.tex` 后，才执行编译。
+- 只有在第1章 working draft 已经并回 `<your-thesis-repo>\thesis\document.tex` 后，才执行编译。
 - 编译 recipe：
   - VS Code LaTeX Workshop `latexmk (xelatex)`
 - 配置来源：
-  - `<private-thesis-repo>\.vscode\settings.json`
+  - `<your-thesis-repo>\.vscode\settings.json`
 - 输出目录：
-  - `<private-thesis-repo>\thesis\build\`
+  - `<your-thesis-repo>\thesis\build\`
 
 ## 执行后同步
 - 完成第1章 working draft 后，至少同步：
-  - `<private-thesis-repo>\thesis\paper-writing-log.md`
+  - `<your-thesis-repo>\thesis\paper-writing-log.md`
 - 如果第1章可写主张、引用边界或图表落点有变化，再同步：
-  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<your-thesis-repo>\thesis\paper-evidence-map.md`
 - 如果第1章正文已经并回正式骨架，再同步：
-  - `<private-thesis-repo>\thesis\document.tex`
+  - `<your-thesis-repo>\thesis\document.tex`
 - 第1章完成后，必须在日志中登记子智能体 reader testing 是否已执行、发现的问题和是否完成修订闭环。
 - 第1章完成后，必须在日志中登记本轮 reader testing 的读取范围为“只读第1章”。
 - 整篇论文完成后，必须显式调用子智能体再做一次全文 reader testing，而不是按需决定是否执行。
@@ -281,3 +281,4 @@ Rules:
 - 不要用 `$graduation-thesis-editor` 代替第1章空白起草。
 - 不要把两个 editor prompt 混成一次调用。
 - 不要在第1章草稿还不稳定时提前进入 `$academic-paper-composer`。
+

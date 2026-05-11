@@ -4,6 +4,23 @@
 
 这个仓库整理的是一条完整的论文推进路径：从蓝图规划、章节起草、实验分析、全文收口，到最终语言打磨与答辩前准备。重点不在“一次性生成整篇论文”，而在把论文写作拆成若干稳定、可追踪、可复盘的阶段。
 
+## At a Glance
+
+- 面向毕业论文写作的分阶段 workflow
+- 把零散 prompt 整理成本地可复用的 skill 体系
+- 同时覆盖从 0 到 1 起草、初稿修改、全文 review 与终稿打磨
+- 适合作为 Codex 论文写作仓库的参考骨架
+
+## 快速导航
+
+- [Workflow Overview](docs/workflow-overview.md)
+- [Skill Map](docs/skill-map.md)
+- [Repo Usage Guide](docs/repo-usage-guide.md)
+- [Quickstart](examples/quickstart.md)
+- [Plans](workflow-assets/plans)
+- [Materials Package Structure](workflow-assets/materials/README.md)
+- [Skill Sources And Adaptations](docs/skill-sources-and-adaptations.md)
+
 ## English Summary
 
 This repository documents a reusable graduation-thesis workflow built around Codex, local skills, staged plans, and chapter material packages.
@@ -15,6 +32,36 @@ It shows how to:
 - revise existing text with focused local-edit routes
 - run closeout review before final polish
 - turn scattered prompts into a maintainable skill system
+
+## Workflow Map
+
+```mermaid
+flowchart TD
+    A["Authority Layer<br/>outline / evidence map / writing log"] --> B["Chapter Materials<br/>writable facts / analysis / verification"]
+    B --> C["Chapter Drafting<br/>doc-coauthoring"]
+    C --> D["Local Editing<br/>graduation-thesis-editor"]
+    D --> E["Closeout Review<br/>thesis-closeout-reviewer"]
+    E --> F["External Re-review<br/>academic-paper-reviewer"]
+    F --> G["Final Polish<br/>humanizer / academic-plotting / composer"]
+
+    A --> E
+    B --> D
+    C --> E
+```
+
+## 核心理念
+
+- 先固定结构和证据边界，再开始写正文
+- 先把章节材料分层，再做章节起草
+- 把“起草、局部修改、整篇审稿、终稿打磨”拆成不同职责
+- 优先构建稳定 workflow，而不是依赖单个万能 prompt
+
+## 仓库亮点
+
+- `graduation-thesis-editor`：由 `awesome-ai-research-writing` Part I 全量 prompt 集合整理而来的本地 route-first skill
+- `thesis-closeout-reviewer`：面向全文收口阶段的 diagnosis-only reviewer
+- `workflow-assets/plans`：保留从章节起草到全文定稿的阶段化计划写法
+- `workflow-assets/materials`：展示如何按“正文可写层 / 结果分析层 / 核对层”组织材料
 
 ## 这个仓库的核心内容
 
@@ -57,7 +104,7 @@ It shows how to:
 - 它把高频局部任务收敛成 `translation / revision / analysis / figures` 四组 route
 - 它强调 route-first、一次只做一个原子任务，以及与 `doc-coauthoring`、`humanizer` 的明确 handoff
 
-## 工作流一图看懂
+## 默认使用顺序
 
 1. 先建立长期 authority：大纲、证据映射、写作日志。
 2. 再为每一章建立素材包，区分可写事实、分析材料和核对材料。
@@ -95,6 +142,14 @@ It shows how to:
 - 想把零散 prompt 整理成本地可复用的 skill
 - 想为论文建立更清晰的 authority、计划和章节材料体系
 - 想把初稿修改、全文审稿、终稿打磨拆成更稳定的链路
+
+## 适合放进你自己仓库里的部分
+
+- authority 文档三件套思路
+- chapter material package 目录结构
+- 分阶段 `PLAN` 模板
+- route-first 的本地 skill 设计方式
+- closeout reviewer 与 local editor 的分工方法
 
 ## 上游来源与启发
 

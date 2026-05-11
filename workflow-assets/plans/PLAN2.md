@@ -9,9 +9,9 @@
 ## 计划定位
 - 这是“第二章专项计划”，不是整篇论文总计划。
 - 本计划默认继承以下长期记忆文档：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 本计划同时继承 `plan_skill.md` 与 `plan_skill2.md` 中已经稳定的主链路：
   - `academic-paper-strategist -> doc-coauthoring -> graduation-thesis-editor -> academic-paper-composer`
 - 但在本轮明确固定：
@@ -60,23 +60,23 @@
 
 ## 必读材料
 - 论文蓝图：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
 - 证据映射：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
 - 写作日志：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 第2章素材包：
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\第二章文献素材包\README.md`
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\第二章文献素材包\第二章文献目录.md`
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\第二章文献素材包\第二章分节起草卡.md`
+  - `<private-thesis-repo>\文档\参考文献\第二章文献素材包\README.md`
+  - `<private-thesis-repo>\文档\参考文献\第二章文献素材包\第二章文献目录.md`
+  - `<private-thesis-repo>\文档\参考文献\第二章文献素材包\第二章分节起草卡.md`
 - 目标正文：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\document.tex`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\document.bib`
+  - `<private-thesis-repo>\thesis\document.tex`
+  - `<private-thesis-repo>\thesis\document.bib`
 
 ## Skill 调用顺序
 1. 主起草流程
 - 用 `$doc-coauthoring` 创建：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\chapter2-working-draft.md`
+  - `<private-thesis-repo>\thesis\chapter2-working-draft.md`
 - 固定起草顺序为：
   - `2.1`
   - `2.2`
@@ -161,14 +161,14 @@
 - 若 reader testing 暴露明显误读风险，应先修订，再进行一次轻量复测后才允许关闭第2章。
 
 ### 阶段 E：并回正式 LaTeX 骨架
-- 只有在整章 working draft 稳定后，才一次性并回 `G:\bishe\JLU-CCST-Thesis\thesis\document.tex`。
+- 只有在整章 working draft 稳定后，才一次性并回 `<private-thesis-repo>\thesis\document.tex`。
 - 并回时优先复用 `document.bib` 中已存在条目，不重复灌入第1章已经使用过的空间转录组综述文献。
 - `document.bib` 只补“第2章最终实际新增用到”的条目，例如：
   - Watershed 经典文献
   - Cellpose 核心文献
   - StarDist 2D / 3D 文献
   - 如正文直接使用 10x 官方网页材料，则补真实网页引用信息；若只作为内部核对材料，则不强制写入 `.bib`
-- 编译规则与 `PLAN1` 相同：VS Code LaTeX Workshop `latexmk (xelatex)`，输出到 `G:\bishe\JLU-CCST-Thesis\thesis\build\`。
+- 编译规则与 `PLAN1` 相同：VS Code LaTeX Workshop `latexmk (xelatex)`，输出到 `<private-thesis-repo>\thesis\build\`。
 
 ## `$graduation-thesis-editor` 调用规则
 - 每次调用都必须先执行该 skill 的全局 route-first 规则。
@@ -241,18 +241,18 @@ Rules:
 Use $doc-coauthoring.
 
 Read first:
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\写作计划\PLAN2.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第二章文献素材包\README.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第二章文献素材包\第二章文献目录.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第二章文献素材包\第二章分节起草卡.md
-- G:\bishe\JLU-CCST-Thesis\thesis\document.tex
-- G:\bishe\JLU-CCST-Thesis\thesis\document.bib
+- <private-thesis-repo>\文档\参考文献\写作计划\PLAN2.md
+- <private-thesis-repo>\thesis\paper-outline.md
+- <private-thesis-repo>\thesis\paper-evidence-map.md
+- <private-thesis-repo>\thesis\paper-writing-log.md
+- <private-thesis-repo>\文档\参考文献\第二章文献素材包\README.md
+- <private-thesis-repo>\文档\参考文献\第二章文献素材包\第二章文献目录.md
+- <private-thesis-repo>\文档\参考文献\第二章文献素材包\第二章分节起草卡.md
+- <private-thesis-repo>\thesis\document.tex
+- <private-thesis-repo>\thesis\document.bib
 
 Task:
-创建 `G:\bishe\JLU-CCST-Thesis\thesis\chapter2-working-draft.md`，并按 `2.1 -> 2.2 -> 2.3.1 -> 2.3.2 -> 2.3.3 -> 2.4` 的顺序共写第2章。
+创建 `<private-thesis-repo>\thesis\chapter2-working-draft.md`，并按 `2.1 -> 2.2 -> 2.3.1 -> 2.3.2 -> 2.3.3 -> 2.4` 的顺序共写第2章。
 
 Rules:
 - `2.1` 只写空间转录组概述与技术路线。
@@ -265,22 +265,22 @@ Rules:
 ```
 
 ## 编译规则
-- 只有在第2章 working draft 已经并回 `G:\bishe\JLU-CCST-Thesis\thesis\document.tex` 后，才执行编译。
+- 只有在第2章 working draft 已经并回 `<private-thesis-repo>\thesis\document.tex` 后，才执行编译。
 - 编译 recipe：
   - VS Code LaTeX Workshop `latexmk (xelatex)`
 - 配置来源：
-  - `G:\bishe\JLU-CCST-Thesis\.vscode\settings.json`
+  - `<private-thesis-repo>\.vscode\settings.json`
 - 输出目录：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\build\`
+  - `<private-thesis-repo>\thesis\build\`
 
 ## 执行后同步
 - 完成第2章 working draft 后，至少同步：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 如第2章正文已经并回正式骨架，再同步：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\document.tex`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\document.bib`
+  - `<private-thesis-repo>\thesis\document.tex`
+  - `<private-thesis-repo>\thesis\document.bib`
 - 如第2章边界、可写主张或图表落点发生变化，再同步：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
 - 第2章完成后，必须在日志中登记子智能体 reader testing 是否已执行、发现的问题和是否完成修订闭环。
 - 第2章完成后，必须在日志中登记本轮 reader testing 的读取范围，默认应写明“第1章 + 第2章”。
 - 整篇论文完成后，必须显式调用子智能体再做一次全文 reader testing，而不是按需决定是否执行。

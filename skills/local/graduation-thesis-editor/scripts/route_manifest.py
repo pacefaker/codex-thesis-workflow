@@ -86,7 +86,7 @@ ROUTES: dict[str, Route] = {
     "GTE-R-DEAI-LATEX": Route(
         "GTE-R-DEAI-LATEX",
         "references/revision.md",
-        "去 AI 味（LaTeX 英文）",
+        "去 AI 味（内部 fallback）",
         "route",
         "Internal fallback for English LaTeX de-AI cleanup.",
         "Prefer humanizer when possible.",
@@ -94,7 +94,7 @@ ROUTES: dict[str, Route] = {
     "GTE-R-DEAI-WORD": Route(
         "GTE-R-DEAI-WORD",
         "references/revision.md",
-        "去 AI 味（Word 中文）",
+        "去 AI 味（内部 fallback）",
         "route",
         "Internal fallback for Chinese thesis de-AI cleanup.",
         "Prefer humanizer when possible.",

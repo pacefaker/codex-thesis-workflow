@@ -25,7 +25,7 @@
 
 1. 建 3 个长期 authority 文档
 2. 给每章建立素材包
-3. 至少准备 2 个 skill：
+3. 至少准备 2 个主 skill：
    - `doc-coauthoring`
    - `graduation-thesis-editor`
 
@@ -37,14 +37,14 @@
 
 ## 3. 推荐起步顺序
 
-1. 先读 [docs/workflow-overview.md](G:/bishe/codex-thesis-workflow/docs/workflow-overview.md)
-2. 再读 [docs/skill-map.md](G:/bishe/codex-thesis-workflow/docs/skill-map.md)
-3. 再看 [docs/skill-sources-and-adaptations.md](G:/bishe/codex-thesis-workflow/docs/skill-sources-and-adaptations.md)
+1. 先读 [workflow-overview.md](workflow-overview.md)
+2. 再读 [skill-map.md](skill-map.md)
+3. 再看 [skill-sources-and-adaptations.md](skill-sources-and-adaptations.md)
 4. 最后参考：
-   - [workflow-assets/plans](G:/bishe/codex-thesis-workflow/workflow-assets/plans)
-   - [workflow-assets/materials](G:/bishe/codex-thesis-workflow/workflow-assets/materials)
+   - [workflow-assets/plans](../workflow-assets/plans)
+   - [workflow-assets/materials/README.md](../workflow-assets/materials/README.md)
 
-## 4. 本仓库最值得学的不是“句子”，而是“结构”
+## 4. 最值得学的不是“句子”，而是“结构”
 
 最值得复用的是：
 
@@ -68,12 +68,33 @@
 - 不是把 `awesome-ai-research-writing` 的 prompt 原封不动逐条手贴使用
 - 而是把其中最常用的局部任务压成 `graduation-thesis-editor`
 
-## 6. 如果你是想给同学分享
+## 6. 如果你已经有初稿
 
-你完全可以把这仓库当作“论文工作流说明书”发给同学，而不是让他们看你的正文。
+不要直接全篇盲润。
 
-最适合让同学先看的 3 个文件是：
+更稳的顺序通常是：
 
-- [README.md](G:/bishe/codex-thesis-workflow/README.md)
-- [docs/workflow-overview.md](G:/bishe/codex-thesis-workflow/docs/workflow-overview.md)
-- [docs/skill-sources-and-adaptations.md](G:/bishe/codex-thesis-workflow/docs/skill-sources-and-adaptations.md)
+1. 先用 `thesis-closeout-reviewer` 找问题
+2. 再用 `graduation-thesis-editor` 修局部问题
+3. 再用 `academic-paper-reviewer` 做复审
+4. 最后才用 `humanizer`
+
+## 7. 如果你还没有开始写
+
+不要上来就让 AI “写一篇论文”。
+
+更稳的顺序是：
+
+1. 先建 authority
+2. 再做章节素材包
+3. 再让 `doc-coauthoring` 起草各章
+4. 再引入 `graduation-thesis-editor`
+
+## 8. 如果你要分享给同学
+
+最适合先发给同学的文件是：
+
+1. [README.md](../README.md)
+2. [workflow-overview.md](workflow-overview.md)
+3. [skill-map.md](skill-map.md)
+4. [examples/quickstart-for-classmates.md](../examples/quickstart-for-classmates.md)

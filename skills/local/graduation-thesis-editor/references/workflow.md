@@ -34,9 +34,19 @@ For those cases, prefer `doc-coauthoring`.
 Choose the smallest matching task and route to one reference only unless the request clearly combines multiple local tasks.
 
 - `translation.md`: translation and note-to-prose rewriting
-- `revision.md`: shortening, expansion, polishing, logic checking, and de-AI fallback
+- `revision.md`: shortening, expansion, polishing, logic checking, and internal de-AI fallback
 - `analysis.md`: experiment analysis and reviewer-style diagnosis
 - `figures.md`: figure captions, table captions, and diagram briefs
+
+## Public-safe snapshot note
+
+This repository preserves:
+
+- route boundaries
+- task contracts
+- local adaptation logic
+
+This repository does not preserve long third-party prompt blocks verbatim.
 
 ## Recommended handoff order
 

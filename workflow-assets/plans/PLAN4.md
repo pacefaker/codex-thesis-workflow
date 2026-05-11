@@ -4,16 +4,16 @@
 - 本计划只服务于第4章前半部分 `4.1 -> 4.4`，不扩展到 `4.5`、`4.6`、第5章正文或整篇论文定稿。
 - 本轮目标是基于第4章实验素材包 V2 的 `README.md + 前半写作层/`，完成第4章前半部分的 working draft，并在稳定后先将 `4.1 -> 4.4` 并回 `document.tex`。
 - 主流程固定为 `$doc-coauthoring`，局部编辑固定为 `$graduation-thesis-editor`；不重新调用 `$academic-paper-strategist`，不进入 `$academic-paper-composer`。
-- 落稿策略固定为“先侧写 working draft，再并回正式骨架”；第4章唯一工作草稿固定为 [chapter4-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter4-working-draft.md)。
-- 编译规则固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，严格按 [settings.json](/G:/bishe/JLU-CCST-Thesis/.vscode/settings.json) 执行，输出到 `G:\bishe\JLU-CCST-Thesis\thesis\build\`。
+- 落稿策略固定为“先侧写 working draft，再并回正式骨架”；第4章唯一工作草稿固定为 `<private-thesis-repo>/thesis/chapter4-working-draft.md`。
+- 编译规则固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，严格按 `<private-thesis-repo>/.vscode/settings.json` 执行，输出到 `<private-thesis-repo>\thesis\build\`。
 
 ## 计划定位
 - 这是“第4章前半部分专项计划”，不是整篇论文总计划，也不是 `T-011` 的结果分析计划。
 - 本计划默认继承以下长期记忆文档：
-  - [paper-outline.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-outline.md)
-  - [paper-evidence-map.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-evidence-map.md)
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md)
-- 本计划同时继承 [plan_skill.md](/D:/Desktop/plan_skill.md) 与 [plan_skill2.md](/D:/Desktop/plan_skill2.md) 中已经稳定的主链路：
+  - `<private-thesis-repo>/thesis/paper-outline.md`
+  - `<private-thesis-repo>/thesis/paper-evidence-map.md`
+  - `<private-thesis-repo>/thesis/paper-writing-log.md`
+- 本计划同时继承 `<private-notes>/plan_skill.md` 与 `<private-notes>/plan_skill2.md` 中已经稳定的主链路：
   - `academic-paper-strategist -> doc-coauthoring -> graduation-thesis-editor -> academic-paper-composer`
 - 但在本轮明确固定：
   - 不重新调用 `$academic-paper-strategist`
@@ -49,9 +49,9 @@
 ## 启动前提
 - 已满足：
   - 第4章实验素材包 V2 已完成三层重组。
-  - [paper-evidence-map.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-evidence-map.md) 中第4章边界已经稳定。
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md) 已明确 `T-010` 默认只读 `README.md + 前半写作层/`。
-  - [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex) 中已有第4章骨架。
+  - `<private-thesis-repo>/thesis/paper-evidence-map.md` 中第4章边界已经稳定。
+  - `<private-thesis-repo>/thesis/paper-writing-log.md` 已明确 `T-010` 默认只读 `README.md + 前半写作层/`。
+  - `<private-thesis-repo>/thesis/document.tex` 中已有第4章骨架。
   - 第1章到第3章已稳定，可为第4章提供前文连续阅读上下文。
 - 若以下条件不满足，则不应直接执行本计划：
   - 第4章职责再次与第3章或第5章混淆。
@@ -60,23 +60,23 @@
 
 ## 必读材料
 - 论文蓝图：
-  - [paper-outline.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-outline.md)
+  - `<private-thesis-repo>/thesis/paper-outline.md`
 - 证据映射：
-  - [paper-evidence-map.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-evidence-map.md)
+  - `<private-thesis-repo>/thesis/paper-evidence-map.md`
 - 写作日志：
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md)
+  - `<private-thesis-repo>/thesis/paper-writing-log.md`
 - 第4章素材包根说明：
-  - [README.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第四章实验素材包/README.md)
+  - `<private-reference>/README.md`
 - 第4章素材包前半写作层：
-  - [第四章实验环境与参数卡.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第四章实验素材包/前半写作层/第四章实验环境与参数卡.md)
-  - [第四章数据集概览卡.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第四章实验素材包/前半写作层/第四章数据集概览卡.md)
-  - [第四章baseline设计卡.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第四章实验素材包/前半写作层/第四章baseline设计卡.md)
-  - [第四章单变量实验设计卡.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第四章实验素材包/前半写作层/第四章单变量实验设计卡.md)
-  - [第四章前半图表建议清单.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第四章实验素材包/前半写作层/第四章前半图表建议清单.md)
+  - `<private-reference>/第四章实验环境与参数卡.md`
+  - `<private-reference>/第四章数据集概览卡.md`
+  - `<private-reference>/第四章baseline设计卡.md`
+  - `<private-reference>/第四章单变量实验设计卡.md`
+  - `<private-reference>/第四章前半图表建议清单.md`
 - 目标正文：
-  - [chapter4-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter4-working-draft.md)
-  - [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex)
-  - [document.bib](/G:/bishe/JLU-CCST-Thesis/thesis/document.bib)
+  - `<private-thesis-repo>/thesis/chapter4-working-draft.md`
+  - `<private-thesis-repo>/thesis/document.tex`
+  - `<private-thesis-repo>/thesis/document.bib`
 
 ## 证据优先级
 - 第一优先：`README.md + 前半写作层/`
@@ -102,7 +102,7 @@
 ## Skill 调用顺序
 1. 主起草流程
 - 用 `$doc-coauthoring` 创建并维护：
-  - [chapter4-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter4-working-draft.md)
+  - `<private-thesis-repo>/thesis/chapter4-working-draft.md`
 - 固定起草顺序为：
   - `4.1`
   - `4.2`
@@ -141,7 +141,7 @@
 
 ## 分阶段执行流程
 ### 阶段 A：建立第4章 working draft 骨架
-- 用 `$doc-coauthoring` 创建 [chapter4-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter4-working-draft.md)。
+- 用 `$doc-coauthoring` 创建 `<private-thesis-repo>/thesis/chapter4-working-draft.md`。
 - 先固定前半部分四个小节骨架：
   - `4.1 实验环境与参数设置`
   - `4.2 数据集介绍`
@@ -150,7 +150,7 @@
 - `4.5` 与 `4.6` 仅保留为后续 `T-011` 续写位置，不在本轮展开。
 
 ### 阶段 B：按小节顺序推进
-- 不跳序推进，保持与 [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md)、[document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex) 和后续日志同步一致。
+- 不跳序推进，保持与 `<private-thesis-repo>/thesis/paper-writing-log.md`、`<private-thesis-repo>/thesis/document.tex` 和后续日志同步一致。
 - 默认允许 `4.2` 与 `4.4` 投入更多迭代轮次，因为它们最容易发生角色越界与结果前移。
 
 ### 阶段 C：每个小节的固定微流程
@@ -162,7 +162,7 @@
    - 数据集角色表达不清
    - baseline / 单变量设计写得像结果分析
    - 存在章节边界越界风险
-4. 小节通过后继续下一节，不立刻并回 [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex)。
+4. 小节通过后继续下一节，不立刻并回 `<private-thesis-repo>/thesis/document.tex`。
 
 ### 阶段 D：前半章 slice-end 复核
 - `4.1 -> 4.4` 都完成后，再调用一次 `$graduation-thesis-editor` 做 slice-end reviewer 式检查。
@@ -175,9 +175,9 @@
 - 如 reviewer 诊断暴露明显误读风险，应先修订，再并回前半章稳定稿。
 
 ### 阶段 E：并回与编译
-- `4.1 -> 4.4` 稳定后，允许先并回 [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex)。
+- `4.1 -> 4.4` 稳定后，允许先并回 `<private-thesis-repo>/thesis/document.tex`。
 - 并回时仅更新前半部分，`4.5 / 4.6` 继续保留占位，等待 `T-011`。
-- 编译只在前半章已经并回 [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex) 后执行。
+- 编译只在前半章已经并回 `<private-thesis-repo>/thesis/document.tex` 后执行。
 - 第4章正式 chapter-end reader testing 明确延后到 `T-011` 整章关闭时执行。
 - 届时默认主测读取范围固定为：
   - `第1章 + 第2章 + 第3章 + 第4章`
@@ -255,22 +255,22 @@ Rules:
 Use $doc-coauthoring.
 
 Read first:
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\写作计划\PLAN4.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第四章实验素材包\README.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第四章实验素材包\前半写作层\第四章实验环境与参数卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第四章实验素材包\前半写作层\第四章数据集概览卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第四章实验素材包\前半写作层\第四章baseline设计卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第四章实验素材包\前半写作层\第四章单变量实验设计卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第四章实验素材包\前半写作层\第四章前半图表建议清单.md
-- G:\bishe\JLU-CCST-Thesis\thesis\chapter4-working-draft.md
-- G:\bishe\JLU-CCST-Thesis\thesis\document.tex
-- G:\bishe\JLU-CCST-Thesis\thesis\document.bib
+- <private-thesis-repo>\文档\参考文献\写作计划\PLAN4.md
+- <private-thesis-repo>\thesis\paper-outline.md
+- <private-thesis-repo>\thesis\paper-evidence-map.md
+- <private-thesis-repo>\thesis\paper-writing-log.md
+- <private-thesis-repo>\文档\参考文献\第四章实验素材包\README.md
+- <private-thesis-repo>\文档\参考文献\第四章实验素材包\前半写作层\第四章实验环境与参数卡.md
+- <private-thesis-repo>\文档\参考文献\第四章实验素材包\前半写作层\第四章数据集概览卡.md
+- <private-thesis-repo>\文档\参考文献\第四章实验素材包\前半写作层\第四章baseline设计卡.md
+- <private-thesis-repo>\文档\参考文献\第四章实验素材包\前半写作层\第四章单变量实验设计卡.md
+- <private-thesis-repo>\文档\参考文献\第四章实验素材包\前半写作层\第四章前半图表建议清单.md
+- <private-thesis-repo>\thesis\chapter4-working-draft.md
+- <private-thesis-repo>\thesis\document.tex
+- <private-thesis-repo>\thesis\document.bib
 
 Task:
-创建并维护 `G:\bishe\JLU-CCST-Thesis\thesis\chapter4-working-draft.md`，按 `4.1 -> 4.2 -> 4.3 -> 4.4` 的顺序共写第4章前半部分。
+创建并维护 `<private-thesis-repo>\thesis\chapter4-working-draft.md`，按 `4.1 -> 4.2 -> 4.3 -> 4.4` 的顺序共写第4章前半部分。
 
 Rules:
 - 只读取 `README.md + 前半写作层/` 作为默认主起草入口。
@@ -283,23 +283,23 @@ Rules:
 ```
 
 ## 编译规则
-- 只有在第4章前半部分已经并回 [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex) 后，才执行编译。
+- 只有在第4章前半部分已经并回 `<private-thesis-repo>/thesis/document.tex` 后，才执行编译。
 - 编译 recipe：
   - VS Code LaTeX Workshop `latexmk (xelatex)`
 - 配置来源：
-  - [settings.json](/G:/bishe/JLU-CCST-Thesis/.vscode/settings.json)
+  - `<private-thesis-repo>/.vscode/settings.json`
 - 输出目录：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\build\`
+  - `<private-thesis-repo>\thesis\build\`
 
 ## 执行后同步
 - 创建 `PLAN4.md` 后，至少同步：
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md)
+  - `<private-thesis-repo>/thesis/paper-writing-log.md`
 - 启动 `T-010` 并完成前半章 working draft 后，至少同步：
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md)
-  - [chapter4-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter4-working-draft.md)
+  - `<private-thesis-repo>/thesis/paper-writing-log.md`
+  - `<private-thesis-repo>/thesis/chapter4-working-draft.md`
 - 如果前半章已经并回正式骨架，再同步：
-  - [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex)
-  - 必要时同步 [document.bib](/G:/bishe/JLU-CCST-Thesis/thesis/document.bib)
+  - `<private-thesis-repo>/thesis/document.tex`
+  - 必要时同步 `<private-thesis-repo>/thesis/document.bib`
 - 第4章正式 chapter-end reader testing 延后到 `T-011` 后，届时必须在日志中登记：
   - 是否执行
   - 主测读取范围
@@ -307,14 +307,14 @@ Rules:
   - 是否完成修订闭环
 
 ## 验收标准
-- `PLAN4.md` 已按 [PLAN_TEMPLATE.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/写作计划/PLAN_TEMPLATE.md) 的结构创建，而不是自由发挥版本。
+- `PLAN4.md` 已按 [PLAN_TEMPLATE.md](PLAN_TEMPLATE.md) 的结构创建，而不是自由发挥版本。
 - `PLAN4.md` 明确只服务 `4.1 -> 4.4`，不提前扩展到 `4.5`。
 - `PLAN4.md` 的默认读入入口明确为 `README.md + 前半写作层/`。
 - `PLAN4.md` 已写死 `4.1` 到 `4.4` 的禁写点，不会把结果层内容前移。
-- `PLAN4.md` 已写死唯一 working draft 为 [chapter4-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter4-working-draft.md)。
-- `PLAN4.md` 已写死 `4.1 -> 4.4` 稳定后允许先并回 [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex)。
+- `PLAN4.md` 已写死唯一 working draft 为 `<private-thesis-repo>/thesis/chapter4-working-draft.md`。
+- `PLAN4.md` 已写死 `4.1 -> 4.4` 稳定后允许先并回 `<private-thesis-repo>/thesis/document.tex`。
 - `PLAN4.md` 已区分 `T-010` 的 slice-end reviewer 诊断与 `T-011` 的正式 chapter-end reader testing。
-- `PLAN4.md` 已写死编译方式为 [settings.json](/G:/bishe/JLU-CCST-Thesis/.vscode/settings.json) 中的 `latexmk (xelatex)`，输出到 `thesis/build/`。
+- `PLAN4.md` 已写死编译方式为 `<private-thesis-repo>/.vscode/settings.json` 中的 `latexmk (xelatex)`，输出到 `thesis/build/`。
 
 ## 禁止事项
 - 不要把 `PLAN4.md` 写成整篇论文总计划。

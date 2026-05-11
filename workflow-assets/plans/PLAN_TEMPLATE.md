@@ -9,9 +9,9 @@
 ## 计划定位
 - 这是一个“章节级执行计划”，不是整篇论文总计划。
 - 它默认继承：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 它必须服从当前冻结版论文结构、章节证据边界和数据集角色口径。
 
 ## 本章范围
@@ -36,11 +36,11 @@
 
 ## 必读材料
 - 论文蓝图：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
 - 证据映射：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
 - 写作日志：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 本章素材包：
   - [填写本章素材包路径]
 - 目标正文文件：
@@ -211,9 +211,9 @@ Rules:
 - 编译 recipe：
   - [例如：VS Code LaTeX Workshop `latexmk (xelatex)`]
 - 配置来源：
-  - [例如：`G:\bishe\JLU-CCST-Thesis\.vscode\settings.json`]
+  - [例如：`<private-thesis-repo>\.vscode\settings.json`]
 - 输出目录：
-  - [例如：`G:\bishe\JLU-CCST-Thesis\thesis\build\`]
+  - [例如：`<private-thesis-repo>\thesis\build\`]
 
 ## 执行后同步
 - 本轮完成后，至少同步：

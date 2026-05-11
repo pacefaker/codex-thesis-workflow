@@ -5,23 +5,19 @@
 ## 总图
 
 | 阶段 | 主 skill | 作用 | 不该替代它的 skill |
-|---|---|---|---|
-| 蓝图规划 | `academic-paper-strategist` | 从项目和代码证据建立论文结构 | `graduation-thesis-editor` |
+| --- | --- | --- | --- |
+| 蓝图规划 | `academic-paper-strategist` | 从项目与代码证据建立论文结构 | `graduation-thesis-editor` |
 | 文档共写 / 章节起草 | `doc-coauthoring` | 从空白页或半结构材料起草章节 | `graduation-thesis-editor` |
 | 局部修改 | `graduation-thesis-editor` | 精准处理已有段落或小节 | `doc-coauthoring` |
 | 全文收口审稿 | `thesis-closeout-reviewer` | diagnosis-only 问题台账 | `graduation-thesis-editor` |
 | 外部视角复审 | `academic-paper-reviewer` | 多 reviewer 复审与 re-review | `humanizer` |
-| 最终去公式化 | `humanizer` | 终稿语言轻清理 | `doc-coauthoring` |
+| 最终轻量去公式化 | `humanizer` | 终稿语言轻清理 | `doc-coauthoring` |
 | 图表补强 | `academic-plotting` | 图表建议和绘图支持 | `graduation-thesis-editor` |
 | 最终组装 / 定稿整理 | `academic-paper-composer` | 最终组装、定稿、交付前处理 | `doc-coauthoring` |
 
-## 1. doc-coauthoring
+## 1. `doc-coauthoring`
 
-来源：
-
-- [anthropics/skills/doc-coauthoring](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring)
-
-在这次论文里的角色：
+角色：
 
 - 章节级共写器
 - 空白页起草器
@@ -29,189 +25,146 @@
 
 适用场景：
 
-- 从零起草第一章、第二章、第三章等
+- 从零起草章节
 - 基于素材包和计划文档重写某章
 - 当某一节已经不是“修补”而是“要重开”时
 
 不适用场景：
 
-- 只是把一段话缩短一点
+- 只想缩短一段文字
 - 只需要给一张图写 caption
-- 只想做逻辑检查
+- 只需要做逻辑检查
 
-## 2. graduation-thesis-editor
+## 2. `graduation-thesis-editor`
 
-来源：
-
-- prompt 基底主要来自：
-  - [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
-
-在这次论文里的角色：
+角色：
 
 - 本地局部编辑器
 - 本地 prompt 路由器
 
-这个 skill 最重要的地方不是“会润色”，而是：
+核心任务族：
 
-- 它把零散 prompt 变成了可路由的 skill
-- 它要求每次任务先选 route
-- 它强制“一次只做一种原子任务”
+- `translation`
+- `revision`
+- `analysis`
+- `figures`
 
-核心任务类型：
+适用场景：
 
-- translation
-- revision
-- analysis
-- figures
-
-典型用法：
-
-- 把一段中文改成更规范的论文中文
-- 检查一段实验分析有没有逻辑问题
-- 根据结果表补一段实验结论
-- 给图或表生成标题
+- 中英翻译
+- 中文学术化改写
+- 缩写、扩写、润色
+- 逻辑检查
+- 实验分析补写
+- 图表标题与 caption
+- reviewer 视角局部诊断
 
 不适用场景：
 
 - 从空白页起草整章
 - 规划整篇论文结构
-- 整篇论文最终收口审稿
+- 直接承担整篇 closeout
 
-## 3. thesis-closeout-reviewer
+## 3. `thesis-closeout-reviewer`
 
-来源：
+角色：
 
-- 不是直接照搬某个 GitHub skill
-- 它是一个本地化重构成果
-- 主要吸收了两类思路：
-  - `content-review-agent` 一类的 closeout 审校维度
-  - `academic-paper-reviewer` 的多视角审稿方式
-
-在这次论文里的角色：
-
-- 晚期收口用的 diagnosis-only 审稿器
-
-最关键的特点：
-
-- 不直接改正文
-- 先读 authority，再判断论文
-- 最终输出问题台账，而不是直接重写文本
+- 晚期全文收口用的 diagnosis-only 审稿器
 
 适用场景：
 
-- 整篇论文做收口审稿
-- 只找问题，不直接改
-- 第 4 章 / 第 5 章 reviewer 级漏洞排查
-
-## 4. academic-paper-strategist
-
-来源：
-
-- [AAASS554/codex-academic-paper-skills](https://github.com/AAASS554/codex-academic-paper-skills)
-
-在这次论文里的角色：
-
-- 把“真实项目/代码/实验”映射成论文结构
-
-这类 skill 最大的价值在于：
-
-- 约束论文不要脱离项目
-- 把可写主张和不可写主张分开
-- 提前规划哪些图和章节是有证据支持的
-
-## 5. academic-paper-composer
-
-来源：
-
-- [AAASS554/codex-academic-paper-skills](https://github.com/AAASS554/codex-academic-paper-skills)
-
-在这次论文里的角色：
-
-- 偏定稿和最终组装
-
-它更适合：
-
-- 已有较稳定草稿
-- 要开始进入最终整理、格式和交付阶段
-
-不适合：
-
-- 前期蓝图不稳时上来就硬写
-
-## 6. academic-paper-reviewer
-
-来源：
-
-- 本地安装的外部论文审稿 skill
-- 这次主要作为“多视角 reviewer”使用
-
-在这次论文里的角色：
-
-- 外部视角复审器
-
-典型用途：
-
-- 整篇复审
+- 整篇论文收口审稿
+- “先找问题，不直接改”
+- 第 4 章 / 第 5 章专项 closeout
 - re-review
-- 检查是否还存在 reviewer 级漏洞
 
-## 7. humanizer
+输出特点：
 
-来源：
+- 只给问题台账
+- 不直接改正文
+- 问题要落到结构、证据、实验解释和语言风险
 
-- [blader/humanizer](https://github.com/blader/humanizer)
+## 4. `academic-paper-reviewer`
 
-在这次论文里的角色：
+角色：
 
-- 终稿轻量去公式化
+- 外部 reviewer 视角复审器
 
-适合处理：
+适用场景：
 
-- 摘要
-- 绪论
-- 结论
+- 对修改后的论文做 re-review
+- 用更苛刻的视角复审某章
+- 在 closeout 之后再做一轮“外部压力测试”
 
-不建议默认处理：
+## 5. `humanizer`
 
-- 方法章
-- 实验章
+角色：
 
-原因很简单：
+- 最终轻量风格清理器
 
-- 方法和实验段落太强行 humanize，容易破坏术语精度和论证边界
+适用场景：
 
-## 8. academic-plotting
+- 摘要、绪论、结论的最终轻清理
+- 明确的“去 AI 味”请求
 
-来源：
+不适用场景：
 
-- 论文绘图类 skill
-- 这次更多作为备用图表增强工具使用
+- 方法章事实修正
+- 实验章主分析改写
+- 结构重开
 
-在这次论文里的角色：
+## 6. `academic-paper-strategist`
+
+角色：
+
+- 证据驱动的论文蓝图规划器
+
+适用场景：
+
+- 从真实项目、代码、产物反推论文结构
+- 论文还没有稳定大纲时
+- 需要先做“论文是否脱离项目事实”的风险判断时
+
+## 7. `academic-paper-composer`
+
+角色：
+
+- 偏终稿阶段的组装与定稿整理工具
+
+适用场景：
+
+- 后期提交版整理
+- Word / DOCX 打包
+- 定稿改写与提交材料准备
+
+不适用场景：
+
+- 蓝图未稳时提前接管主链
+
+## 8. `academic-plotting`
+
+角色：
 
 - 图表补强器
 
 适用场景：
 
-- 结果图表达不够清楚
-- 需要建议最合适的图表形式
+- 需要给结果选图表表达方式
+- 需要补一张结构图或结果图
 
-不应滥用：
+不适用场景：
 
-- 不能为了看起来“图多”就补图
-- 不能替代真实实验图源
+- 仅靠绘图替代实验论证
+- 在正文逻辑没定住前盲目补图
 
-## 9. codex-project-memory
+## 9. 最重要的边界
 
-在这次论文里的角色：
+最容易出问题的不是 skill 太少，而是职责混用。
 
-- 维护论文项目的长期文档式状态
+这套流程里最重要的边界是：
 
-它本身不写论文正文，但它让：
-
-- authority
-- 计划文档
-- 执行状态
-- 分阶段目标
-
-能够持续留在工作流里，而不是散掉。
+- `doc-coauthoring` 不替代局部编辑器
+- `graduation-thesis-editor` 不替代章节起草器
+- `thesis-closeout-reviewer` 不直接改稿
+- `humanizer` 不替代事实修正
+- `academic-paper-composer` 不应过早变成主链

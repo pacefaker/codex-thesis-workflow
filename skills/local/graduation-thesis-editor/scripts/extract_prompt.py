@@ -8,7 +8,7 @@ from route_manifest import canonical_prompt, get_route, prompt_hash
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Extract a canonical prompt block by Route ID.")
+    parser = argparse.ArgumentParser(description="Extract the public-safe route snapshot by Route ID.")
     parser.add_argument("--route-id", required=True, help="Stable route id such as GTE-R-POLISH-ZH")
     parser.add_argument("--json", action="store_true", help="Print JSON instead of plain text")
     return parser
@@ -38,7 +38,7 @@ def main() -> int:
         print(f"Route ID: {payload['route_id']}")
         print(f"Prompt Source: {payload['prompt_source']}")
         print(f"Prompt Hash (SHA256): {payload['prompt_hash_sha256']}")
-        print("Prompt Preserved Verbatim: yes")
+        print("Prompt Snapshot Type: public-safe summary")
         print()
         print(payload["prompt"], end="")
     return 0

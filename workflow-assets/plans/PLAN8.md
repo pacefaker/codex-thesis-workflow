@@ -10,14 +10,14 @@
 ## 计划定位
 - 这是 `T-013` 下的一个“定向降 AI / 语言收口”专项计划，不是新一轮全文重写计划。
 - 它默认继承：
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\写作计划\PLAN7.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\文档\参考文献\写作计划\PLAN7.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 它只处理语言风格和表达节奏，不重新决定章节职责、实验边界、数据集角色层级和结果强度。
 - 当前正式稿入口固定为：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\document.tex`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\cover.tex`
+  - `<private-thesis-repo>\thesis\document.tex`
+  - `<private-thesis-repo>\thesis\cover.tex`
 - 本轮继续服从 `PLAN7.md` 已写死的总约束：
   - `Visium HD MouseBrain` 是唯一主实验线
   - `Human Ovarian` 只作 supporting dataset
@@ -63,12 +63,12 @@
 
 ## 必读材料
 - 总体 authority：
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\写作计划\PLAN7.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\document.tex`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\cover.tex`
+  - `<private-thesis-repo>\文档\参考文献\写作计划\PLAN7.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\document.tex`
+  - `<private-thesis-repo>\thesis\cover.tex`
 - 章节级强制回读规则：
   - 改第1章：先读 `PLAN1.md + 第一章引言素材包`
   - 改第2章：先读 `PLAN2.md + 第二章文献素材包`
@@ -130,10 +130,10 @@
 
 ### 阶段 D：并回与验证
 - 所有修改仍并回现有正式稿入口：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\document.tex`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\cover.tex`
+  - `<private-thesis-repo>\thesis\document.tex`
+  - `<private-thesis-repo>\thesis\cover.tex`
 - 编译规则固定为 `.vscode/settings.json` 中的 `latexmk (xelatex)`
-- 输出目录固定为 `G:\bishe\JLU-CCST-Thesis\thesis\build\`
+- 输出目录固定为 `<private-thesis-repo>\thesis\build\`
 
 ## `$graduation-thesis-editor` 调用规则
 - 每次调用都必须 route-first。
@@ -201,21 +201,21 @@ Task:
 - 编译 recipe：
   - VS Code LaTeX Workshop `latexmk (xelatex)`
 - 配置来源：
-  - `G:\bishe\JLU-CCST-Thesis\.vscode\settings.json`
+  - `<private-thesis-repo>\.vscode\settings.json`
 - 输出目录：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\build\`
+  - `<private-thesis-repo>\thesis\build\`
 
 ## 执行后同步
 - 最小更新：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 记录内容固定为：
   - 哪些章做了定向降 AI
   - 哪些章只做了 GTE，没有追加 `$humanizer`
   - 编译是否通过
   - 是否出现 authority 风险
 - 默认不修改：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
   - 任意章节素材包本体
 
 ## 验收标准

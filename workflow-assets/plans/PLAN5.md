@@ -6,17 +6,17 @@
   - `5.1 全文总结`
   - `5.2 研究展望`
 - 主流程固定为 `$doc-coauthoring`，局部编辑固定为 `$graduation-thesis-editor`，可选末期使用 `$humanizer`；不重新调用 `$academic-paper-strategist`，不进入 `$academic-paper-composer`。
-- 落稿策略固定为“先侧写 working draft，再并回正式骨架”；第5章唯一工作草稿固定为 [chapter5-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter5-working-draft.md)。
-- 编译规则固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，严格按 [settings.json](/G:/bishe/JLU-CCST-Thesis/.vscode/settings.json) 执行，输出到 `G:\bishe\JLU-CCST-Thesis\thesis\build\`。
+- 落稿策略固定为“先侧写 working draft，再并回正式骨架”；第5章唯一工作草稿固定为 `<private-thesis-repo>/thesis/chapter5-working-draft.md`。
+- 编译规则固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，严格按 `<private-thesis-repo>/.vscode/settings.json` 执行，输出到 `<private-thesis-repo>\thesis\build\`。
 - 第5章完成后，本计划只负责第5章 chapter-end reader testing；摘要起草与全文 reader testing 在 `T-012B / PLAN6.md` 的后续阶段单独收口，不混入本计划主体。
 
 ## 计划定位
 - 这是“第5章正文专项计划”，不是整篇论文总计划，也不是摘要与全文关闭计划。
 - 本计划默认继承以下长期记忆文档：
-  - [paper-outline.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-outline.md)
-  - [paper-evidence-map.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-evidence-map.md)
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md)
-- 本计划同时继承 [plan_skill.md](/D:/Desktop/plan_skill.md) 与 [plan_skill2.md](/D:/Desktop/plan_skill2.md) 中已经稳定的主链路：
+  - `<private-thesis-repo>/thesis/paper-outline.md`
+  - `<private-thesis-repo>/thesis/paper-evidence-map.md`
+  - `<private-thesis-repo>/thesis/paper-writing-log.md`
+- 本计划同时继承 `<private-notes>/plan_skill.md` 与 `<private-notes>/plan_skill2.md` 中已经稳定的主链路：
   - `academic-paper-strategist -> doc-coauthoring -> graduation-thesis-editor -> academic-paper-composer`
 - 但在本轮明确固定：
   - 不重新调用 `$academic-paper-strategist`
@@ -54,9 +54,9 @@
 ## 启动前提
 - 已满足：
   - 第5章总结素材包已完成双层整理，并已同步为 `5.1 全文总结 + 5.2 研究展望` 结构。
-  - [paper-evidence-map.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-evidence-map.md) 中第5章边界与素材入口已经稳定。
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md) 已明确 `T-012A` 与 `T-013A` 下的第5章 authority 切换。
-  - [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex) 与 [chapter5-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter5-working-draft.md) 可作为当前正文入口。
+  - `<private-thesis-repo>/thesis/paper-evidence-map.md` 中第5章边界与素材入口已经稳定。
+  - `<private-thesis-repo>/thesis/paper-writing-log.md` 已明确 `T-012A` 与 `T-013A` 下的第5章 authority 切换。
+  - `<private-thesis-repo>/thesis/document.tex` 与 `<private-thesis-repo>/thesis/chapter5-working-draft.md` 可作为当前正文入口。
   - 第1章到第4章已稳定，可为第5章提供前文连续阅读上下文。
 - 若以下条件不满足，则不应直接执行本计划：
   - 第5章素材包路径失效。
@@ -65,23 +65,23 @@
 
 ## 必读材料
 - 论文蓝图：
-  - [paper-outline.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-outline.md)
+  - `<private-thesis-repo>/thesis/paper-outline.md`
 - 证据映射：
-  - [paper-evidence-map.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-evidence-map.md)
+  - `<private-thesis-repo>/thesis/paper-evidence-map.md`
 - 写作日志：
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md)
+  - `<private-thesis-repo>/thesis/paper-writing-log.md`
 - 第5章素材包根说明：
-  - [README.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第五章总结素材包/README.md)
+  - `<private-reference>/README.md`
 - 第5章素材包正文可写层：
-  - [第五章写作总纲.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第五章总结素材包/正文可写层/第五章写作总纲.md)
-  - [第五章总结要点卡.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第五章总结素材包/正文可写层/第五章总结要点卡.md)
-  - [第五章展望边界卡.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第五章总结素材包/正文可写层/第五章展望边界卡.md)
-  - [第五章章节承接卡.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第五章总结素材包/正文可写层/第五章章节承接卡.md)
-  - [摘要联动提示卡.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/第五章总结素材包/正文可写层/摘要联动提示卡.md)
+  - `<private-reference>/第五章写作总纲.md`
+  - `<private-reference>/第五章总结要点卡.md`
+  - `<private-reference>/第五章展望边界卡.md`
+  - `<private-reference>/第五章章节承接卡.md`
+  - `<private-reference>/摘要联动提示卡.md`
 - 目标正文：
-  - [chapter5-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter5-working-draft.md)
-  - [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex)
-  - [document.bib](/G:/bishe/JLU-CCST-Thesis/thesis/document.bib)
+  - `<private-thesis-repo>/thesis/chapter5-working-draft.md`
+  - `<private-thesis-repo>/thesis/document.tex`
+  - `<private-thesis-repo>/thesis/document.bib`
 
 ## 证据优先级
 - 第一优先：`README.md + 正文可写层/`
@@ -103,7 +103,7 @@
 ## Skill 调用顺序
 1. 主起草流程
 - 用 `$doc-coauthoring` 创建并维护：
-  - [chapter5-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter5-working-draft.md)
+  - `<private-thesis-repo>/thesis/chapter5-working-draft.md`
 - 第5章固定按以下顺序推进：
   1. `5.1` 第1段：全文任务与论文定位
   2. `5.1` 第2段：方法链路与工程实现完成项
@@ -156,7 +156,7 @@
 
 ## 推荐章节微流程
 ### 阶段 A：建立第5章 working draft 骨架
-- 用 `$doc-coauthoring` 创建 [chapter5-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter5-working-draft.md)。
+- 用 `$doc-coauthoring` 创建 `<private-thesis-repo>/thesis/chapter5-working-draft.md`。
 - 先固定第5章骨架：
   - `# 第5章 总结与展望`
   - `## 5.1 全文总结`
@@ -178,7 +178,7 @@
    - 数据集角色层级表达不清
    - 把总结写成新的结果章节
    - 把未来工作写成既成事实
-4. 段落通过后继续下一段，不立刻并回 [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex)。
+4. 段落通过后继续下一段，不立刻并回 `<private-thesis-repo>/thesis/document.tex`。
 
 ### 阶段 D：第5章 reviewer 式诊断
 - 第5章草稿完成后，必须调用一次 `$graduation-thesis-editor` 做第5章 reviewer 式检查。
@@ -190,9 +190,9 @@
 - 如 reviewer 诊断暴露明显误读风险，应先修订，再进入第5章关闭流程。
 
 ### 阶段 E：并回与编译
-- 第5章稳定后，将其并回 [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex)。
+- 第5章稳定后，将其并回 `<private-thesis-repo>/thesis/document.tex`。
 - 并回时只更新第5章正文，不同时处理摘要。
-- 编译只在第5章已并回 [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex) 后执行。
+- 编译只在第5章已并回 `<private-thesis-repo>/thesis/document.tex` 后执行。
 - `document.bib` 默认不改；只有当第5章实际新增正文引用时，才补入对应条目。
 
 ### 阶段 F：第5章 chapter-end reader testing
@@ -280,21 +280,21 @@ Rules:
 Use $doc-coauthoring.
 
 Read first:
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\写作计划\PLAN5.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\README.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\正文可写层\第五章写作总纲.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\正文可写层\第五章总结要点卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\正文可写层\第五章展望边界卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\正文可写层\第五章章节承接卡.md
-- G:\bishe\JLU-CCST-Thesis\thesis\chapter5-working-draft.md
-- G:\bishe\JLU-CCST-Thesis\thesis\document.tex
-- G:\bishe\JLU-CCST-Thesis\thesis\document.bib
+- <private-thesis-repo>\文档\参考文献\写作计划\PLAN5.md
+- <private-thesis-repo>\thesis\paper-outline.md
+- <private-thesis-repo>\thesis\paper-evidence-map.md
+- <private-thesis-repo>\thesis\paper-writing-log.md
+- <private-thesis-repo>\文档\参考文献\第五章总结素材包\README.md
+- <private-thesis-repo>\文档\参考文献\第五章总结素材包\正文可写层\第五章写作总纲.md
+- <private-thesis-repo>\文档\参考文献\第五章总结素材包\正文可写层\第五章总结要点卡.md
+- <private-thesis-repo>\文档\参考文献\第五章总结素材包\正文可写层\第五章展望边界卡.md
+- <private-thesis-repo>\文档\参考文献\第五章总结素材包\正文可写层\第五章章节承接卡.md
+- <private-thesis-repo>\thesis\chapter5-working-draft.md
+- <private-thesis-repo>\thesis\document.tex
+- <private-thesis-repo>\thesis\document.bib
 
 Task:
-创建并维护 `G:\bishe\JLU-CCST-Thesis\thesis\chapter5-working-draft.md`，按固定顺序完成第5章 `5.1 全文总结` 与 `5.2 研究展望`。
+创建并维护 `<private-thesis-repo>\thesis\chapter5-working-draft.md`，按固定顺序完成第5章 `5.1 全文总结` 与 `5.2 研究展望`。
 
 Rules:
 - 默认主读入入口是 `README.md + 正文可写层/`。
@@ -308,23 +308,23 @@ Rules:
 ```
 
 ## 编译规则
-- 只有在第5章已经并回 [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex) 后，才执行编译。
+- 只有在第5章已经并回 `<private-thesis-repo>/thesis/document.tex` 后，才执行编译。
 - 编译 recipe：
   - VS Code LaTeX Workshop `latexmk (xelatex)`
 - 配置来源：
-  - [settings.json](/G:/bishe/JLU-CCST-Thesis/.vscode/settings.json)
+  - `<private-thesis-repo>/.vscode/settings.json`
 - 输出目录：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\build\`
+  - `<private-thesis-repo>\thesis\build\`
 
 ## 执行后同步
 - 创建或刷新 `PLAN5.md` 后，至少同步：
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md)
+  - `<private-thesis-repo>/thesis/paper-writing-log.md`
 - 启动 `T-012A` 并完成第5章 working draft 后，至少同步：
-  - [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md)
-  - [chapter5-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter5-working-draft.md)
+  - `<private-thesis-repo>/thesis/paper-writing-log.md`
+  - `<private-thesis-repo>/thesis/chapter5-working-draft.md`
 - 如果第5章已经并回正式骨架，再同步：
-  - [document.tex](/G:/bishe/JLU-CCST-Thesis/thesis/document.tex)
-  - 必要时同步 [document.bib](/G:/bishe/JLU-CCST-Thesis/thesis/document.bib)
+  - `<private-thesis-repo>/thesis/document.tex`
+  - 必要时同步 `<private-thesis-repo>/thesis/document.bib`
 - 第5章 chapter-end reader testing 完成后，必须在日志中登记：
   - 是否执行
   - 主测读取范围
@@ -333,17 +333,17 @@ Rules:
 - 摘要与全文 reader testing 的收口记录，不在本计划同步范围内。
 
 ## 验收标准
-- `PLAN5.md` 已按 [PLAN_TEMPLATE.md](/G:/bishe/JLU-CCST-Thesis/文档/参考文献/写作计划/PLAN_TEMPLATE.md) 的结构创建，而不是自由发挥版本。
+- `PLAN5.md` 已按 [PLAN_TEMPLATE.md](PLAN_TEMPLATE.md) 的结构创建，而不是自由发挥版本。
 - `PLAN5.md` 明确只服务第5章 `5.1 + 5.2`，不把摘要和全文 reader testing 混入本计划主体。
 - `PLAN5.md` 已写死默认主读入入口为 `README.md + 正文可写层/`。
-- `PLAN5.md` 已写死第5章唯一 working draft 为 [chapter5-working-draft.md](/G:/bishe/JLU-CCST-Thesis/thesis/chapter5-working-draft.md)。
+- `PLAN5.md` 已写死第5章唯一 working draft 为 `<private-thesis-repo>/thesis/chapter5-working-draft.md`。
 - `PLAN5.md` 已区分：
   - `5.1` 只写全文总结
   - `5.2` 只写研究展望
 - `PLAN5.md` 已明确区分：
   - 第5章 chapter-end reader testing
   - 全文 reader testing
-- [paper-writing-log.md](/G:/bishe/JLU-CCST-Thesis/thesis/paper-writing-log.md) 更新后，后续执行者不需要再临场决定：
+- `<private-thesis-repo>/thesis/paper-writing-log.md` 更新后，后续执行者不需要再临场决定：
   - 第5章是否仍是单节
   - 第5章是否新建独立 working draft
   - 第5章默认是否读后台核对层

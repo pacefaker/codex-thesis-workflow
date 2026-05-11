@@ -30,7 +30,7 @@ class Decision:
     decision: str
     route_id: str | None
     prompt_source: str | None
-    prompt_preserved_verbatim: str | None
+    prompt_snapshot_type: str | None
     handoff_skill: str | None
     reason: str
 
@@ -80,14 +80,14 @@ def decision_for_goal(goal: str, has_draft: str, prefer_editor_deai: bool, targe
             return Decision("handoff", None, None, None, handoff["handoff_skill"], handoff["reason"])
         route_id = "GTE-R-DEAI-LATEX" if target_language == "english" else "GTE-R-DEAI-WORD"
         route = get_route(route_id)
-        return Decision("route", route_id, f"{route.source_file} :: {route.heading}", "yes", None, "Use the internal fallback de-AI prompt.")
+        return Decision("route", route_id, f"{route.source_file} :: {route.heading}", "public-safe summary", None, "Use the internal fallback de-AI route summary.")
 
     if goal not in GOAL_TO_ROUTE:
         raise ValueError(f"Unsupported goal: {goal}")
 
     route_id = GOAL_TO_ROUTE[goal]
     route = get_route(route_id)
-    return Decision("route", route_id, f"{route.source_file} :: {route.heading}", "yes", None, route.use_when)
+    return Decision("route", route_id, f"{route.source_file} :: {route.heading}", "public-safe summary", None, route.use_when)
 
 
 def render_text(decisions: list[Decision]) -> str:
@@ -106,7 +106,7 @@ def render_text(decisions: list[Decision]) -> str:
                 "Decision: route",
                 f"Route ID: {item.route_id}",
                 f"Prompt Source: {item.prompt_source}",
-                f"Prompt Preserved Verbatim: {item.prompt_preserved_verbatim}",
+                f"Prompt Snapshot Type: {item.prompt_snapshot_type}",
                 f"Reason: {item.reason}",
             ]
         )
@@ -118,7 +118,7 @@ def render_text(decisions: list[Decision]) -> str:
         else:
             lines.append(
                 f"{index}. {item.route_id} -> {item.prompt_source} "
-                f"(Prompt Preserved Verbatim: {item.prompt_preserved_verbatim})"
+                f"(Prompt Snapshot Type: {item.prompt_snapshot_type})"
             )
     return "\n".join(lines)
 

@@ -4,15 +4,15 @@
 
 ## 1. 先理解一句话
 
-这套方法不是“让 AI 帮你一口气写完整篇论文”，而是“把论文写作拆成多个低风险阶段，然后让不同 skill 分工完成”。
+这套方法不是“让 AI 一口气写完整篇论文”，而是“把论文写作拆成多个低风险阶段，然后让不同 skill 分工完成”。
 
 ## 2. 先看哪 3 个文件
 
 先按顺序看：
 
-1. [README.md](G:/bishe/codex-thesis-workflow/README.md)
-2. [docs/workflow-overview.md](G:/bishe/codex-thesis-workflow/docs/workflow-overview.md)
-3. [docs/skill-map.md](G:/bishe/codex-thesis-workflow/docs/skill-map.md)
+1. [README.md](../README.md)
+2. [docs/workflow-overview.md](../docs/workflow-overview.md)
+3. [docs/skill-map.md](../docs/skill-map.md)
 
 ## 3. 如果你想复用我的方法
 
@@ -37,7 +37,7 @@
 
 不要直接全篇盲润。
 
-正确顺序更推荐是：
+推荐顺序是：
 
 1. 用 `thesis-closeout-reviewer` 先找问题
 2. 用 `graduation-thesis-editor` 修局部问题

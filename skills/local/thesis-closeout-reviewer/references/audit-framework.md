@@ -1,14 +1,19 @@
 # Audit Framework
 
-This skill combines project-specific closeout checks with a multi-perspective review mindset.
+This skill combines project-specific closeout checks with a reviewer-style pressure test.
 
 ## Required project authorities
 
-Always ground findings against:
+In the original local workflow, findings were always grounded against three project authorities:
 
 - `paper-outline.md`: frozen structure and non-negotiable rules
 - `paper-evidence-map.md`: allowed claims, forbidden claims, and chapter evidence boundaries
 - `paper-writing-log.md`: current milestone, stage, and active routing rules
+
+Public repository note:
+
+- The public repo does not ship those private files.
+- It preserves the audit logic that depends on them.
 
 ## Audit Dimension 1: Spec Audit
 
@@ -17,7 +22,7 @@ Check whether the text violates the frozen structure or chapter boundary rules.
 Typical questions:
 
 - Does this section write content that belongs to another chapter?
-- Does it violate a non-negotiable rule from `paper-outline.md`?
+- Does it violate a non-negotiable structure rule?
 - Does the chapter title promise one thing while the body delivers another?
 - Does the text reopen a boundary that has already been frozen?
 
@@ -70,66 +75,7 @@ Typical questions:
 - Does Chapter 4 explain why the results look this way, not just list them?
 - Does Chapter 5 close the loop instead of merely restating headings?
 
-Common issue type label:
+Common issue type labels:
 
 - `chapter-flow`
-
-## Multi-Perspective Overlay
-
-Apply these reviewer mindsets after the 4 core dimensions:
-
-### Methodology Reviewer
-
-Use for:
-
-- Chapter 4
-- metric interpretation
-- fairness of comparisons
-
-Look for:
-
-- ambiguous experiment setup
-- unsupported result interpretation
-- missing negative-result discussion
-
-### Domain Reviewer
-
-Use for:
-
-- Chapter 2
-- contribution framing
-- theory and background positioning
-
-Look for:
-
-- background statements that overreach literature support
-- method framing that confuses source method and current engineering implementation
-
-### Perspective Reviewer
-
-Use for:
-
-- cross-chapter coherence
-- reader-facing clarity
-
-Look for:
-
-- missing bridges
-- sections that assume too much hidden context
-- abrupt role changes of datasets or results
-
-### Devil's Advocate
-
-Use for:
-
-- adversarial mode
-- Chapter 5 summary claims
-- abstract and conclusion stress test
-
-Look for:
-
-- strongest counter-argument against the main takeaway
-- logical leaps
-- cherry-picking of favorable interpretation
-- "so what?" weakness
-
+- `experiment-interpretation`

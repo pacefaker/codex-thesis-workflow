@@ -5,20 +5,20 @@
 - 本轮目标是基于已稳定的第1章到第5章正文、第5章总结素材包和摘要素材包，完成高质量摘要 working draft，并在稳定后并回 `cover.tex`。
 - 本计划将摘要明确定位为“贡献说明书（statement of contribution）”，而不是“论文简介”；摘要应在有限篇幅内交代本文解决了什么问题、采用了什么核心思路、形成了什么可成立的贡献判断。
 - 本轮主 skill 固定为 `$doc-coauthoring`；已有草稿后的局部诊断、润色或中英转换固定交给 `$graduation-thesis-editor`；仅在末期需要轻微去公式化时才可选 `$humanizer`。
-- 落稿策略固定为“先侧写 abstract working draft，再并回前置页模板”；摘要工作草稿固定为 `G:\bishe\JLU-CCST-Thesis\thesis\abstract-working-draft.md`。
-- 编译规则固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，严格按 `G:\bishe\JLU-CCST-Thesis\.vscode\settings.json` 执行，输出到 `G:\bishe\JLU-CCST-Thesis\thesis\build\`。
+- 落稿策略固定为“先侧写 abstract working draft，再并回前置页模板”；摘要工作草稿固定为 `<private-thesis-repo>\thesis\abstract-working-draft.md`。
+- 编译规则固定为 VS Code LaTeX Workshop 的 recipe `latexmk (xelatex)`，严格按 `<private-thesis-repo>\.vscode\settings.json` 执行，输出到 `<private-thesis-repo>\thesis\build\`。
 
 ## 计划定位
 - 这是一个“摘要专项执行计划”，不是整篇论文总计划。
 - 它默认继承：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 它必须服从当前冻结版论文结构、数据集角色口径和结果边界。
 - 为避免把摘要写成“凭印象复述”，本计划同时固定读取：
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\`
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\`
-- `G:\bishe\JLU-CCST-Thesis\文档\如何写论文之摘要篇.pdf` 的核心规则已被吸收进本计划与摘要素材包，后续默认以更新后的 `PLAN6.md + 摘要素材包` 为 authority，不再回退到旧轻量入口。
+  - `<private-thesis-repo>\文档\参考文献\第五章总结素材包\`
+  - `<private-thesis-repo>\文档\参考文献\摘要素材包\`
+- `<private-thesis-repo>\文档\如何写论文之摘要篇.pdf` 的核心规则已被吸收进本计划与摘要素材包，后续默认以更新后的 `PLAN6.md + 摘要素材包` 为 authority，不再回退到旧轻量入口。
 
 ## 本章范围
 - 只写：
@@ -45,9 +45,9 @@
 - 已具备以下前置条件：
   - 第1章到第5章正文已经稳定并并回 `document.tex`。
   - 第5章已按 `PLAN5.md` 完成关闭。
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\` 已稳定。
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\` 已建立。
-  - `G:\bishe\JLU-CCST-Thesis\thesis\cover.tex` 已提供摘要与关键词入口。
+  - `<private-thesis-repo>\文档\参考文献\第五章总结素材包\` 已稳定。
+  - `<private-thesis-repo>\文档\参考文献\摘要素材包\` 已建立。
+  - `<private-thesis-repo>\thesis\cover.tex` 已提供摘要与关键词入口。
 - 如果以下条件不满足，则不要直接执行本计划：
   - 第1章到第5章仍处于大范围重写状态。
   - 第5章和摘要的职责再次混淆。
@@ -55,25 +55,25 @@
 
 ## 必读材料
 - 论文蓝图：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
 - 证据映射：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
 - 写作日志：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 第5章素材包：
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\README.md`
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\正文可写层\摘要联动提示卡.md`
+  - `<private-thesis-repo>\文档\参考文献\第五章总结素材包\README.md`
+  - `<private-thesis-repo>\文档\参考文献\第五章总结素材包\正文可写层\摘要联动提示卡.md`
 - 摘要素材包：
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\README.md`
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\摘要结构与结果句规则卡.md`
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\摘要事实边界卡.md`
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\摘要压缩顺序卡.md`
-  - `G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\摘要关键词与中英对齐卡.md`
+  - `<private-thesis-repo>\文档\参考文献\摘要素材包\README.md`
+  - `<private-thesis-repo>\文档\参考文献\摘要素材包\摘要结构与结果句规则卡.md`
+  - `<private-thesis-repo>\文档\参考文献\摘要素材包\摘要事实边界卡.md`
+  - `<private-thesis-repo>\文档\参考文献\摘要素材包\摘要压缩顺序卡.md`
+  - `<private-thesis-repo>\文档\参考文献\摘要素材包\摘要关键词与中英对齐卡.md`
 - 目标正文文件：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\abstract-working-draft.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\cover.tex`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\document.tex`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\document.bib`
+  - `<private-thesis-repo>\thesis\abstract-working-draft.md`
+  - `<private-thesis-repo>\thesis\cover.tex`
+  - `<private-thesis-repo>\thesis\document.tex`
+  - `<private-thesis-repo>\thesis\document.bib`
 
 ## Skill 调用顺序
 1. 主起草流程
@@ -100,7 +100,7 @@
 
 ## 推荐章节微流程
 ### 阶段 A：建立摘要 working draft 骨架
-- 用主流程 skill 维护 `G:\bishe\JLU-CCST-Thesis\thesis\abstract-working-draft.md`。
+- 用主流程 skill 维护 `<private-thesis-repo>\thesis\abstract-working-draft.md`。
 - 先固定骨架：
   - `## 中文摘要`
   - `## 中文关键词`
@@ -138,7 +138,7 @@
 ### 阶段 E：并回与编译
 
 ### 阶段 F：并回与编译
-- 摘要稳定后，并回 `G:\bishe\JLU-CCST-Thesis\thesis\cover.tex`。
+- 摘要稳定后，并回 `<private-thesis-repo>\thesis\cover.tex`。
 - 编译只在并回 `cover.tex` 后执行。
 - 如需全文一致性核读，应在摘要并回后再执行，而不是在 working draft 状态就宣称关闭。
 
@@ -160,19 +160,19 @@
 Use $doc-coauthoring.
 
 Read first:
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\写作计划\PLAN6.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md
-- G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\README.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\第五章总结素材包\正文可写层\摘要联动提示卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\README.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\摘要结构与结果句规则卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\摘要事实边界卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\摘要压缩顺序卡.md
-- G:\bishe\JLU-CCST-Thesis\文档\参考文献\摘要素材包\摘要关键词与中英对齐卡.md
-- G:\bishe\JLU-CCST-Thesis\thesis\document.tex
-- G:\bishe\JLU-CCST-Thesis\thesis\cover.tex
+- <private-thesis-repo>\文档\参考文献\写作计划\PLAN6.md
+- <private-thesis-repo>\thesis\paper-outline.md
+- <private-thesis-repo>\thesis\paper-evidence-map.md
+- <private-thesis-repo>\thesis\paper-writing-log.md
+- <private-thesis-repo>\文档\参考文献\第五章总结素材包\README.md
+- <private-thesis-repo>\文档\参考文献\第五章总结素材包\正文可写层\摘要联动提示卡.md
+- <private-thesis-repo>\文档\参考文献\摘要素材包\README.md
+- <private-thesis-repo>\文档\参考文献\摘要素材包\摘要结构与结果句规则卡.md
+- <private-thesis-repo>\文档\参考文献\摘要素材包\摘要事实边界卡.md
+- <private-thesis-repo>\文档\参考文献\摘要素材包\摘要压缩顺序卡.md
+- <private-thesis-repo>\文档\参考文献\摘要素材包\摘要关键词与中英对齐卡.md
+- <private-thesis-repo>\thesis\document.tex
+- <private-thesis-repo>\thesis\cover.tex
 
 Task:
 - 基于上述材料，先完成高质量中文摘要，再整理中英文关键词，最后基于中文摘要生成英文摘要。
@@ -227,18 +227,18 @@ Rules:
 - 编译 recipe：
   - VS Code LaTeX Workshop `latexmk (xelatex)`
 - 配置来源：
-  - `G:\bishe\JLU-CCST-Thesis\.vscode\settings.json`
+  - `<private-thesis-repo>\.vscode\settings.json`
 - 输出目录：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\build\`
+  - `<private-thesis-repo>\thesis\build\`
 
 ## 执行后同步
 - 本轮完成后，至少同步：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-writing-log.md`
+  - `<private-thesis-repo>\thesis\paper-writing-log.md`
 - 若摘要 authority、关键词口径或摘要证据入口发生变化，再同步：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-evidence-map.md`
-  - `G:\bishe\JLU-CCST-Thesis\thesis\paper-outline.md`
+  - `<private-thesis-repo>\thesis\paper-evidence-map.md`
+  - `<private-thesis-repo>\thesis\paper-outline.md`
 - 若摘要正式并回前置页，再同步：
-  - `G:\bishe\JLU-CCST-Thesis\thesis\cover.tex`
+  - `<private-thesis-repo>\thesis\cover.tex`
 
 ## 验收标准
 - `PLAN6.md` 已按 `PLAN_TEMPLATE.md` 的结构创建，而不是轻量笔记式入口。

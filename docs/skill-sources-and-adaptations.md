@@ -23,6 +23,12 @@
 
 ### Local adaptation
 
+这里需要显式说明一层关系：
+
+- `graduation-thesis-editor` 的本地完整版，不是随意摘取了几个 prompt
+- 它是按 `awesome-ai-research-writing` 的 Part I 全部 prompt 集合整理后创建出来的本地 skill
+- 我做的不是“继续手贴长 prompt”，而是把 Part I 的局部写作能力改造成可路由、可分工、可长期复用的本地调用入口
+
 这个来源最有价值的地方，不是“给我一个万能 prompt”，而是它把论文写作中的常见局部任务拆得很细，例如：
 
 - 翻译

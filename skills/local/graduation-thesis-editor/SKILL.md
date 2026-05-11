@@ -21,6 +21,8 @@ Use this skill as a local paragraph-and-section editing toolkit for a Chinese La
 
 ## Public repository note
 
+The local full version of this skill was created by organizing the full Part I prompt collection from [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) into a single routed local skill for thesis editing tasks.
+
 This public repository preserves:
 
 - route design

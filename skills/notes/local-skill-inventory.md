@@ -16,7 +16,7 @@
 ### 2. `graduation-thesis-editor`
 
 - 来源：
-  - [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) 的 prompt 体系，经本地重构后形成的 skill
+  - [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) 的 Part I 全部 prompt 集合，经本地整理、分组和 route 化后形成的 skill
 - 角色：
   - 局部编辑
   - 实验分析

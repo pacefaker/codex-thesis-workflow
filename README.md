@@ -75,6 +75,12 @@ The goal is not one-shot AI writing. The goal is a controllable, auditable, low-
 - [graduation-thesis-editor](skills/local/graduation-thesis-editor)
 - [thesis-closeout-reviewer](skills/local/thesis-closeout-reviewer)
 
+其中 `graduation-thesis-editor` 需要特别说明：
+
+- 它的本地完整版是按 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) 的 Part I 全部 prompt 集合整理、分组并 skill 化创建的
+- 当前公开仓库展示的是公开安全版 route 快照，用来说明本地化结构、触发方式和输入输出契约
+- 出于公开发布和复用边界考虑，这里不逐字镜像第三方长 prompt 原文
+
 这里保留的是：
 
 - 路由设计
